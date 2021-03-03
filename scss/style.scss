@@ -88,9 +88,9 @@ button {
     &__item {
         margin-bottom: $m-5;
 
-        &__social-icon {
-            @include social-icon;
-            
+        i {
+            @include icon;
+            margin-right: $m-2;
         }
     }
 
@@ -142,20 +142,6 @@ button {
         &-color {
             color: color(primary);
         }
-    }
-
-    &__social {
-        flex-direction: column;
-        &-icon {
-            @include social-icon;
-        }
-    }
-
-    &__img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 295px;
     }
 }
 

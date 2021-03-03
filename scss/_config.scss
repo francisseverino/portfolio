@@ -48,10 +48,10 @@
     color: set-text-color($color);
 }
 
-@mixin social-icon{
-    width:max-content;
-    margin-right: $m-2;
+@mixin icon{
+    width: max-content;
     font-size: $lg;
+    cursor: pointer;
 
     &:hover {
         color: color(primary);
