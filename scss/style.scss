@@ -20,8 +20,8 @@ html {
 
 body {
     font-family: 'montserrat', sans-serif;
-    color: $secondary-color;
-    background-color: $background-color;
+    color: color(secondary);
+    background-color: color(background);
 }
 
 ul {
@@ -30,7 +30,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: $secondary-color;
+    color: color(secondary);
 }
 
 h1, h2 {
@@ -61,7 +61,7 @@ button {
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color: $primary-color;
+    background-color: color(primary);
 }
 
 .nav {
@@ -80,7 +80,7 @@ button {
             width: 70%;
             height: 100%;
             padding: 2rem;
-            background-color: $background-color-secondary;
+            background-color: color(secondary-background);
             transition: .5s;
         }
     }
@@ -90,7 +90,6 @@ button {
 
         &__social-icon {
             @include social-icon;
-            // color:#fff;
             
         }
     }
@@ -113,7 +112,7 @@ button {
     }
 
     &__toggle {
-        color: $secondary-color;
+        color: color(secondary);
         font-size: 2rem;
         cursor: pointer;
     }
@@ -141,7 +140,7 @@ button {
         margin-bottom: $m-5;
 
         &-color {
-            color: $primary-color;
+            color: color(primary);
         }
     }
 

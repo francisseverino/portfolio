@@ -14,7 +14,7 @@
 
 .button-primary {
     @extend %button;
-    background-color: $primary-color;
+    background-color: color(primary);
     a {
         color:#fff
     }
@@ -22,8 +22,8 @@
 
 .button-secondary {
     @extend %button;
-    border: 2px $primary-color solid;
+    border: 2px color(primary) solid;
     a {
-        color: $primary-color
+        color: color(primary)
     }
 }

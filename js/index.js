@@ -12,6 +12,7 @@ const showMenu = (toggleId, navId) => {
 }
 showMenu('nav-toggle', 'nav-menu')
 
+
 // Set Active link and Remove Menu
 
 const navLink = document.querySelectorAll('.nav__link');
@@ -24,3 +25,20 @@ function linkAction() {
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// Dark - Light mode
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.documentElement.setAttribute("data-theme", "light");
+
+    const themeSwitcher = document.getElementById("theme-switcher");
+
+    themeSwitcher.onclick = function() {
+
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      const switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+      document.documentElement.setAttribute("data-theme", switchToTheme);
+    }
+  });

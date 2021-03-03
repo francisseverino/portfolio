@@ -1,23 +1,37 @@
-// Colors
-$primary-color: #4070f4;
-$secondary-color: #0E2431;
-$background-color: #fff;
-$background-color-secondary: #dfe4f5;
+:root {
+    // Colors
+    --primary-color: #4070f4;
+    --secondary-color: #0E2431;
+    --background-color: #fff;
+    --secondary-background-color: #dfe4f5;
+}
 
-$header-height: 4rem;
+[data-theme="dark"] {
+    --secondary-color: #f7fcff;
+    --background-color: #333;
+    --secondary-background-color: rgb(69, 69, 69);
+}
 
-//Font size
-$lg: 2rem;
-$md: 1.25rem;
-$lead: 0.938rem;
+    $header-height: 4rem;
 
-// Margin sizes
-$m-1: 0.5rem;
-$m-2: 1rem;
-$m-3: 1.5rem;
-$m-4: 2rem;
-$m-5: 2.5rem;
-$m-6: 3rem;
+    //Font size
+    $lg: 2rem;
+    $md: 1.25rem;
+    $lead: 0.938rem;
+
+    // Margin sizes
+    $m-1: 0.5rem;
+    $m-2: 1rem;
+    $m-3: 1.5rem;
+    $m-4: 2rem;
+    $m-5: 2.5rem;
+    $m-6: 3rem;
+
+
+@function color($color-name) {
+    @return var(--#{$color-name}-color);
+}
+
 
 // Set text color based on background
 @function set-text-color($color) {
@@ -40,6 +54,6 @@ $m-6: 3rem;
     font-size: $lg;
 
     &:hover {
-        color: $primary-color;
+        color: color(primary);
     }
 }
