@@ -1,0 +1,45 @@
+// Colors
+$primary-color: #4070f4;
+$secondary-color: #0E2431;
+$background-color: #fff;
+$background-color-secondary: #dfe4f5;
+
+$header-height: 4rem;
+
+//Font size
+$lg: 2rem;
+$md: 1.25rem;
+$lead: 0.938rem;
+
+// Margin sizes
+$m-1: 0.5rem;
+$m-2: 1rem;
+$m-3: 1.5rem;
+$m-4: 2rem;
+$m-5: 2.5rem;
+$m-6: 3rem;
+
+// Set text color based on background
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+@mixin social-icon{
+    width:max-content;
+    margin-right: $m-2;
+    font-size: $lg;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
