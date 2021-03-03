@@ -48,7 +48,17 @@
     color: set-text-color($color);
 }
 
-@mixin icon{
+%active-nav-item {
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: color(primary);
+}
+
+%icon {
     width: max-content;
     font-size: $lg;
     cursor: pointer;
