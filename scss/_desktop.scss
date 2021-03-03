@@ -1,0 +1,22 @@
+
+@media(min-width: 768px){
+    .nav{
+        &__list{
+            display: flex;
+        }
+        &__item{
+            margin: 0 $m-1;
+            margin-bottom: 0;
+            i {
+                font-size: $lead;
+                margin-right: $m-1;
+            }
+        }
+        &__toggle{
+            display: none;
+        }
+        &__link{
+            font-size: $lead;
+        }
+    }
+}
