@@ -162,7 +162,7 @@ button {
 // Footer
 .footer {
     padding: $m-4 0;
-    font-size: $sm;
+    font-size: 12px; // ? Should I keep it with rems or px?
 }
 
 @import 'button';

@@ -1,5 +1,8 @@
 
 @media(min-width: 768px){
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .nav{
         &__list{
             display: flex;
@@ -18,5 +21,11 @@
         &__link{
             font-size: $lead;
         }
+    }
+}
+
+@media(min-width: 1024px){
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
