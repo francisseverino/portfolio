@@ -1,59 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Styles -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <title>Francis Severino</title>
-</head>
-<body>
-    <header>
-        <!-- Navbar -->
-        <nav class="nav">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Styles -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Francis Severino</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="nav">
+                <div class="container flex">
+                    <div>
+                        <a href="#" class="nav__logo">Francis</a>
+                    </div>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
+                            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                            <li class="nav__item">
+                                <a href="" class="nav__item__social-icon"><i class="bx bxl-linkedin"></i></a>
+                                <a href="" class="nav__item__social-icon"><i class="bx bxl-github"></i></a>
+                                <button id="theme-switcher"><i id="theme-switcher-icon" class="bx bx-moon"></i></button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="bx bx-menu"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Home -->
+        <section class="home" id="home">
             <div class="container flex">
                 <div>
-                    <a href="#" class="nav__logo">Francis</a>
-                </div>
-    
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item">
-                            <a href="" class="nav__item__social-icon"><i class="bx bxl-linkedin"></i></a>
-                            <a href="" class="nav__item__social-icon"><i class="bx bxl-github"></i></a>
-                            <button id="theme-switcher"><i id="theme-switcher-icon" class="bx bx-moon"></i></button>
-                        </li>
-
-                    </ul>
-                </div>
-    
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-menu"></i>
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Francis</span><br>Software
+                        Developer</h1>
+                    <button class="button-primary"><a href="#">Contact</a></button>
+                    <button class="button-secondary"><a href="#">Resume</a></button>
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
 
-    <!-- Home -->
-    <section class="home" id="home">
-        <div class="container flex">
-            <div>
-                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Francis</span><br>Software Developer</h1>
-                <button class="button-primary"><a href="#">Contact</a></button>
-                <button class="button-secondary"><a href="#">Resume</a></button>
+
+
+        <!-- About -->
+        <!-- <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about__detail flex">
+                    <div class="about__description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure perspiciatis voluptatem ut
+                            ipsam id illo vero eligendi mollitia cum fuga hic repellat doloribus error libero ratione
+                            officia dolor, rem sint atque. Aperiam odio provident delectus doloremque consectetur cum
+                            laborum.</p>
+                    </div>
+                    <div class="about__skills">
+                        <p>HTML5-CSS3-JavaScript-Sass-ReactJS-ReactNative-Firebase</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section> -->
 
-    <!-- JS Script File -->
-    <script src="js/index.js"></script>
-</body>
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project grid">
+                    <div class="card">
+                        <h4>SocialApp</h4>
+                        <p class="project__description">Applied remarkable efficiency and developed a social
+                            application
+                            that allows people to chat, make friends, or date during the COVID-19 pandemic.</p>
+                        <div class="project__footer">
+                            <p>React Native | Django | AWS</p>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <h4>Autove</h4>
+                        <p class="project__description">Demonstrated success in developing a mobile application to
+                            facilitate users in finding any parts, color codes, information, and more for any vehicle by
+                            using the app.</p>
+                        <div class="project__footer">
+                            <p>React Native | Laravel | Firebase</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Flixo</h4>
+                        <p class="project__description">Used latest web technologies including React and JS to made
+                            Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.
+                        </p>
+                        <div class="project__footer">
+                            <p>React | TheMovieDB</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>HW TODO</h4>
+                        <p class="project__description">Created an application using Python framework Flask along with a
+                            group that helps students with assignments that synchronize with Canvas LMS and lets you add
+                            your own.</p>
+                        <div class="project__footer">
+                            <p>Flask | Canvas LMS | Twilio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JS Script File -->
+        <script src="js/index.js"></script>
+    </body>
+
 </html>

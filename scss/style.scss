@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import 'config';
 
 * {
@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: 'montserrat', sans-serif;
-    color: color(secondary);
+    color: color(text);
     background-color: color(background);
 }
 
@@ -30,11 +30,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: color(secondary);
+    color: color(text);
 }
 
 i {
-    color: color(secondary);
+    color: color(text);
 }
 
 h1, h2 {
@@ -102,11 +102,12 @@ button {
     }
     &__logo {
         font-size: $md;
+        font-weight: 600;
         letter-spacing: 1px;
     }
 
     &__toggle {
-        color: color(secondary);
+        color: color(text);
         font-size: 2rem;
         cursor: pointer;
     }
@@ -135,6 +136,25 @@ button {
 
         &-color {
             color: color(primary);
+        }
+    }
+}
+
+// Projects
+.projects {
+    .project {
+        h4 {
+            font-size: $lead;
+        }
+        &__description {
+            color: color(secondary-text);
+        }
+
+        &__footer {
+            color: color(secondary-text);
+            font-size: $sm;
+            text-align: right;
+            margin-top: $m-2;
         }
     }
 }

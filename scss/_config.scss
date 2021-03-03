@@ -1,13 +1,16 @@
 :root {
     // Colors
     --primary-color: #4070f4;
-    --secondary-color: #0E2431;
+    --text-color: #333;
+    --secondary-text-color: #707070;
     --background-color: #fff;
-    --secondary-background-color: #dfe4f5;
+    --secondary-background-color: rgb(249, 249, 249);
+    // --secondary-background-color: #dfe4f5;
 }
 
 [data-theme="dark"] {
-    --secondary-color: #f7fcff;
+    --text-color: #f7fcff;
+    --secondary-text-color: #dedede;
     --background-color: #333;
     --secondary-background-color: rgb(69, 69, 69);
 }
@@ -17,6 +20,7 @@
     //Font size
     $lg: 2rem;
     $md: 1.25rem;
+    $sm: 0.8rem;
     $lead: 0.938rem;
 
     // Margin sizes
