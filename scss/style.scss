@@ -62,8 +62,12 @@ button {
 
 // Nav
 .nav {
+    position: fixed;
     height: $header-height;
-    box-shadow: 0px 0px 20px rgba(69, 69, 69, 0.09);
+    width: 100%;
+    background-color: color(secondary-background);
+    box-shadow: 0px 0px 30px rgba(69, 69, 69, 0.09);
+    z-index: 2;
 
     .flex {
         justify-content: space-between;
@@ -156,6 +160,7 @@ button {
         // margin: 0 -1.2rem;
         border-radius: 16px;
         box-shadow: 0px 4px 30px rgba(20, 20, 20, 0.12);
+        color: color(secondary-text);
     }
     &__skills {
         flex-wrap: wrap;
