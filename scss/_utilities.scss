@@ -14,52 +14,6 @@
     margin: 10px;
 }
 
-.percentage-card{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        font-weight: 600;
-        padding: .5rem 1rem;
-        margin-bottom: $m-4;
-        border-radius: .5rem;
-        box-shadow: 0px 4px 25px rgba(20, 20, 20, 0.1);
-    
-    &__title{
-        display: flex;
-        align-items: center;
-        i {
-            font-size: 1.5rem;
-            margin-right: $m-2;
-            color: color(primary);
-        }
-        span {
-            font-size: $lead;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background-color: color(primary);
-            height: .25rem;
-            border-radius: .5rem;
-        }
-    }
-}
-//Create percentage classes
-@mixin percentage($width) {
-    .percentage-card.p#{$width} {
-        .percentage-card__title::after {
-            width: $width * 1%;
-        }
-    }
-}
-
-@for $i from 1 through 100 {
-    @include percentage($i);
-}
-
 .flex {
     display: flex;
     justify-content: center;
