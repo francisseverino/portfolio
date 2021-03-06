@@ -30,18 +30,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
   document.documentElement.setAttribute('data-theme', 'light');
 
   const themeSwitcher = document.getElementById('theme-switcher');
-  const themeSwitcherIcon = themeSwitcher.getElementsByClassName('bx')[0];
+  const themeSwitcherIcon = themeSwitcher.getElementsByClassName('far')[0];
 
   themeSwitcher.onclick = function () {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     if (currentTheme === 'dark') {
       switchToTheme = 'light';
-      themeSwitcherIcon.classList.remove('bx-moon');
-      themeSwitcherIcon.classList.add('bx-sun');
+      themeSwitcherIcon.classList.remove('fa-sun');
+      themeSwitcherIcon.classList.add('fa-moon');
     } else {
       switchToTheme = 'dark';
-      themeSwitcherIcon.classList.add('bx-sun');
-      themeSwitcherIcon.classList.remove('bx-moon');
+      themeSwitcherIcon.classList.remove('fa-moon');
+      themeSwitcherIcon.classList.add('fa-sun');
     }
 
     document.documentElement.setAttribute('data-theme', switchToTheme);
