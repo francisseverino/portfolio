@@ -17,15 +17,11 @@
 .button-primary {
     @extend %button;
     background-color: color(primary);
-    a {
-        color:#fff
-    }
+    color:#fff;
 }
 
 .button-secondary {
     @extend %button;
     border: 2px color(primary) solid;
-    a {
-        color: color(primary)
-    }
+    color: color(primary);
 }
