@@ -20,6 +20,8 @@ function linkAction() {
   this.classList.add('active');
 
   const navMenu = document.getElementById('nav-menu');
+  const toggle = document.getElementById('nav-toggle');
+  toggle.checked = false;
   navMenu.classList.remove('show');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));

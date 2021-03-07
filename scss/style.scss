@@ -114,12 +114,6 @@ button {
         font-weight: 600;
         letter-spacing: 1px;
     }
-
-    &__toggle {
-        color: color(text);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
 }
 
 .active::after {
@@ -215,6 +209,7 @@ button {
     font-size: 12px; // ? Should I keep it with rems or px?
 }
 
+@import 'menu';
 @import 'button';
 @import 'utilities';
 @import 'desktop';
