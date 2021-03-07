@@ -75,6 +75,7 @@ button {
     }
 
     &__menu {
+        position: relative;
         @media(max-width: 768px) {
             position: fixed;
             top: $header-height;

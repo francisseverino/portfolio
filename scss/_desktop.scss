@@ -3,7 +3,7 @@
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .nav{
+    .nav {
         &__list{
             display: flex;
         }
