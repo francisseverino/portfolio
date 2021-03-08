@@ -129,6 +129,10 @@ button {
 .home {
     height: calc(100vh - 4rem); //$header-height = 4rem
     margin: 0;
+    background-image: url(../images/bg.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 
     .flex {
         justify-content: flex-start;
@@ -209,6 +213,7 @@ button {
     font-size: 12px; // ? Should I keep it with rems or px?
 }
 
+// @import 'background';
 @import 'menu';
 @import 'button';
 @import 'utilities';
