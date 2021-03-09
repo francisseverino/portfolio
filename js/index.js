@@ -16,8 +16,8 @@ showMenu('nav-toggle', 'nav-menu');
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
-  navLink.forEach(n => n.classList.remove('active'));
-  this.classList.add('active');
+  // navLink.forEach(n => n.classList.remove('active'));
+  // this.classList.add('active');
 
   const navMenu = document.getElementById('nav-menu');
   const toggle = document.getElementById('nav-toggle');
