@@ -74,3 +74,23 @@ const navIndicatorOnScroll = () => {
 };
 
 navIndicatorOnScroll();
+
+//Back to top button
+scrollTop = () => {
+  const scrollTopButton = document.getElementById('scroll-top-button');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      scrollTopButton.parentElement.classList.add('show');
+    } else {
+      scrollTopButton.parentElement.classList.remove('show');
+    }
+  });
+
+  scrollTopButton.addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+};
+
+scrollTop();

@@ -218,6 +218,44 @@ button {
   font-size: 12px;
 }
 
+.scroll-top {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 135px;
+  height: 135px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.scroll-top button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: var(--secondary-background-color);
+  box-shadow: 11px 11px 20px 0 rgba(19, 15, 73, 0.05);
+  cursor: pointer;
+}
+.scroll-top button i {
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+.scroll-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 label {
   display: flex;
   flex-direction: column;
