@@ -157,7 +157,7 @@ button {
   justify-content: flex-start;
 }
 .home__title {
-  font-size: 2.4rem;
+  font-size: 4rem;
   margin-bottom: 2.5rem;
 }
 .home__title-color {
@@ -190,7 +190,7 @@ button {
   line-height: 1.2;
 }
 .about__skills .skill i {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--secondary-text-color);
 }
 .about__skills .skill:hover {
@@ -200,17 +200,56 @@ button {
   color: var(--primary-color);
 }
 
-.projects .project h4 {
+.projects {
+  margin-bottom: 60px;
+}
+.projects .grid {
+  gap: 0;
+  padding: 20px;
+}
+.projects .card {
+  position: relative;
+  padding: 0;
+  min-height: 350px;
+}
+.projects .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  padding: 0;
+}
+.projects .card .project__info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: all 0.4s ease 0s;
+  opacity: 0;
+  padding: 16px;
+  color: #ffffff;
+}
+.projects .card .project__info h4 {
   font-size: 0.938rem;
+  color: #fff;
 }
-.projects .project__description {
-  color: var(--secondary-text-color);
+.projects .card .project__info .project__description {
+  color: #fafafa;
+  font-weight: 400;
 }
-.projects .project__footer {
-  color: var(--secondary-text-color);
+.projects .card .project__info .project__footer {
   font-size: 0.8rem;
   text-align: right;
   margin-top: 1rem;
+}
+.projects .card:hover .project__info {
+  transform: translate(16px, 16px);
+  opacity: 0.9;
+}
+.projects .card.project__info {
+  transition: all 0.9s ease-in-out 0s;
 }
 
 .footer {
