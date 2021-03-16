@@ -207,6 +207,9 @@ button {
         }
         .project__info {
             position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             left: 0;
             top: 0;
             height: 100%;
@@ -220,6 +223,11 @@ button {
 
             h4 {
                 font-size: $lead;
+                color: #fff;
+            }
+
+            button {
+                border-color: #fff;
                 color: #fff;
             }
             .project__description {
