@@ -94,3 +94,42 @@ scrollTop = () => {
 };
 
 scrollTop();
+
+const modalData = {
+  'hw-todo':
+    'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
+  socialapp:
+    'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
+  autove:
+    'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
+  flixo: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
+};
+
+// Modal
+// Get the modal
+const modal = document.getElementById('modal');
+const projects = document.getElementsByClassName('project__button');
+const modalClose = document.getElementsByClassName('modal__close')[0];
+
+// When the user clicks on the button, open the modal
+for (let project of projects) {
+  project.onclick = function () {
+    modal.style.display = 'block';
+    const { id } = this.dataset;
+    console.log(id);
+    document.getElementById('modal-header').textContent = id;
+    document.getElementById('modal-description').textContent = modalData[id];
+  };
+}
+
+// When the user clicks on <span> (x), close the modal
+modalClose.onclick = function () {
+  modal.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};

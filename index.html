@@ -16,6 +16,22 @@
     </head>
 
     <body>
+
+        <!-- The Modal -->
+        <div id="modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal__content">
+                <button class="modal__close"><i class="fas fa-times"></i></button>
+                <img src="./images/projects/hw-todo.png" alt="" id="modal-image" class="modal__image">
+                <div class="modal__body">
+                    <h1 id="modal-header" class="modal__header">Modal</h1>
+                    <p id="modal-description" class="modal__description"></p>
+                </div>
+            </div>
+
+        </div>
+
         <header>
             <!-- Navbar -->
             <nav class="nav">
@@ -143,51 +159,47 @@
                 <h2 class="section-title">Projects</h2>
                 <div class="project grid">
                     <div class="card">
-                        <h4>SocialApp</h4>
-                        <p class="project__description">Applied remarkable efficiency and developed a social
-                            application
-                            that allows people to chat, make friends, or date during the COVID-19 pandemic.</p>
-                        <div class="project__footer">
-                            <p>React Native | Django | AWS</p>
+                        <img src="./images/projects/hw-todo.png" alt="">
+                        <div class="project__info">
+                            <h4>SocialApp</h4>
+                            <button class="project__button button-secondary" data-id="socialapp">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React Native | Django | AWS</p>
                         </div>
                     </div>
                     <div class="card">
-
-                        <h4>Autove</h4>
-                        <p class="project__description">Demonstrated success in developing a mobile application to
-                            facilitate users in finding any parts, color codes, information, and more for any vehicle by
-                            using the app.</p>
-                        <div class="project__footer">
-                            <p>React Native | Laravel | Firebase</p>
+                        <img src="./images/projects/hw-todo.png" alt="">
+                        <div class="project__info">
+                            <h4>Autove</h4>
+                            <button class="project__button button-secondary" data-id="autove">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React Native | Laravel | Firebase</p>
                         </div>
                     </div>
                     <div class="card">
-                        <h4>Flixo</h4>
-                        <p class="project__description">Used latest web technologies including React and JS to made
-                            Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.
-                        </p>
-                        <div class="project__footer">
-                            <p>React | TheMovieDB</p>
+                        <img src="./images/projects/hw-todo.png" alt="">
+                        <div class="project__info">
+                            <h4>Flixo</h4>
+                            <button class="project__button button-secondary" data-id="flixo">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React | TheMovieDB</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./images/projects/hw-todo.png" alt="">
                         <div class="project__info">
                             <h4>HW TODO</h4>
-                            <!-- <p>Created an application using Python framework Flask
-                                along
-                                with a
-                                group that helps students with assignments that synchronize with Canvas LMS and lets
-                                you
-                                add
-                                your own.</p> -->
-                            <button class="button-secondary">
+                            <button class="project__button button-secondary" data-id="hw-todo">
                                 <span>Learn More</span>
                             </button>
                             <p class="project__footer">Flask | Canvas LMS | Twilio</p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -202,7 +214,6 @@
                 <p>Copyright &copy; 2021 Francis Severino - All rights reserved</p>
             </div>
         </footer>
-
 
         <!-- JS Script File -->
         <script src="js/index.js"></script>

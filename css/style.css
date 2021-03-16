@@ -274,7 +274,7 @@ button {
   top: auto;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 2;
   width: 135px;
   height: 135px;
   visibility: hidden;
@@ -300,6 +300,76 @@ button {
 .scroll-top.show {
   visibility: visible;
   opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding: 20px;
+  /* Modal Content/Box */
+  /* The Close Button */
+}
+.modal__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  max-width: 768px;
+  width: 100%;
+}
+.modal__header {
+  text-align: center;
+  font-weight: 300;
+  color: #6c6c6c;
+}
+.modal__body {
+  /* max-height: 1200px; */
+  padding: 20px 24px;
+  border-radius: 4px;
+  background-color: white;
+}
+.modal__close {
+  display: flex;
+  position: absolute;
+  top: -1rem;
+  right: -0.75rem;
+  background-color: #fff;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.modal__close i {
+  color: #aeb5bc;
+}
+.modal__close:hover, .modal__close:focus {
+  background-color: #ee7470;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal__close:hover i, .modal__close:focus i {
+  color: #fff;
 }
 
 label {
