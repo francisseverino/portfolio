@@ -217,6 +217,8 @@ button {
   width: 100%;
   height: 350px;
   padding: 0;
+  display: block;
+  border-radius: 10px;
 }
 .projects .card .project__info {
   position: absolute;
@@ -326,32 +328,29 @@ button {
 }
 .modal__content {
   position: relative;
-  background-color: #fefefe;
+  background-color: var(--secondary-background-color);
   margin: 5% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
-  border-radius: 8px;
+  border-radius: 10px;
   max-width: 768px;
   width: 100%;
 }
 .modal__header {
   text-align: center;
   font-weight: 300;
-  color: #6c6c6c;
+  color: var(--secondary-text-color);
 }
 .modal__body {
-  /* max-height: 1200px; */
   padding: 20px 24px;
   border-radius: 4px;
-  background-color: white;
 }
 .modal__close {
   display: flex;
   position: absolute;
   top: -1rem;
   right: -0.75rem;
-  background-color: #fff;
+  background-color: var(--background-color);
   float: right;
   font-size: 16px;
   font-weight: bold;

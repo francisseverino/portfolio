@@ -96,13 +96,25 @@ scrollTop = () => {
 scrollTop();
 
 const modalData = {
-  'hw-todo':
-    'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
-  socialapp:
-    'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
-  autove:
-    'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
-  flixo: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
+  'hw-todo': {
+    title: 'HW Todo',
+    description:
+      'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
+  },
+  socialapp: {
+    title: 'SocialApp',
+    description:
+      'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
+  },
+  autove: {
+    title: 'Autove',
+    description:
+      'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
+  },
+  flixo: {
+    title: 'Flixo',
+    description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
+  },
 };
 
 // Modal
@@ -117,8 +129,8 @@ for (let project of projects) {
     modal.style.display = 'block';
     const { id } = this.dataset;
     console.log(id);
-    document.getElementById('modal-header').textContent = id;
-    document.getElementById('modal-description').textContent = modalData[id];
+    document.getElementById('modal-header').textContent = modalData[id].title;
+    document.getElementById('modal-description').textContent = modalData[id].description;
   };
 }
 
