@@ -3,8 +3,10 @@
   --primary-color: #4070f4;
   --text-color: #333;
   --secondary-text-color: #707070;
-  --background-color: #fafafa;
+  --background-color: #fff;
   --secondary-background-color: #fff;
+  --projects-background-color: rgb(255, 245, 246);
+  --about-background-color: rgb(248, 248, 255);
 }
 
 [data-theme=dark] {
@@ -12,6 +14,8 @@
   --secondary-text-color: #dedede;
   --background-color: #333;
   --secondary-background-color: rgb(69, 69, 69);
+  --projects-background-color: rgb(255, 125, 138, 0.04);
+  --about-background-color: rgb(121, 121, 255, 0.04);
 }
 
 .section-title::after, .active::after, .nav__link:hover:after {
@@ -59,6 +63,10 @@ body {
   font-family: "Jost", sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+section {
+  padding: 4rem 0;
 }
 
 ul {
@@ -146,12 +154,8 @@ button {
 }
 
 .home {
-  height: calc(100vh);
+  height: calc(92vh);
   margin: 0;
-  background-image: url(../images/bg.svg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
 }
 .home .flex {
   justify-content: flex-start;
@@ -165,7 +169,7 @@ button {
 }
 
 .about {
-  margin-top: -130px;
+  position: relative;
   margin-bottom: 30px;
 }
 .about .container {
@@ -199,13 +203,29 @@ button {
 .about__skills .skill:hover i {
   color: var(--primary-color);
 }
+.about__section-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  width: 60%;
+  height: 50%;
+  max-height: 100%;
+  min-height: 300px;
+  border-top-right-radius: 55px;
+  border-bottom-right-radius: 55px;
+  background-color: var(--about-background-color);
+}
 
 .projects {
   margin-bottom: 60px;
+  position: relative;
 }
 .projects .grid {
-  gap: 0;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 .projects .card {
   position: relative;
@@ -259,6 +279,20 @@ button {
 }
 .projects .card.project__info {
   transition: all 0.9s ease-in-out 0s;
+}
+.projects__section-background {
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: -1;
+  width: 70%;
+  min-height: 470px;
+  border-top-left-radius: 55px;
+  border-bottom-left-radius: 55px;
+  background-color: var(--projects-background-color);
+  height: 100%;
 }
 
 .footer {
@@ -418,17 +452,18 @@ input[type=checkbox]:checked ~ span:nth-of-type(3) {
   transform: translate(15px, -6px) rotatez(45deg);
 }
 
-.button-secondary, .button-primary {
+.button {
   display: inline-block;
+  width: 100%;
   color: #fff;
   padding: 1rem 2.8rem;
   border-radius: 12px;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 10px 0;
   transition: transform 0.2s ease-out;
   font-size: 16px;
 }
-.button-secondary:hover, .button-primary:hover {
+.button:hover {
   transform: translateY(-2px);
 }
 
@@ -505,6 +540,11 @@ input[type=checkbox]:checked ~ span:nth-of-type(3) {
   }
   .nav__link {
     font-size: 0.938rem;
+  }
+
+  .button {
+    width: auto;
+    margin: 10px;
   }
 }
 @media (min-width: 1024px) {
