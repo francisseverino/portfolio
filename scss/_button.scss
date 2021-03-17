@@ -21,6 +21,8 @@
 }
 
 .button-secondary {
-    border: 2px color(primary) solid;
+    // border: 2px color(primary) solid;
+    background-color: color(secondary-background);
     color: color(primary);
+    box-shadow: 0px 4px 20px rgba(60, 60, 60, 0.1);
 }
