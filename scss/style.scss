@@ -105,12 +105,21 @@ button {
         position:relative;
         font-size: $md;
 
-        &:hover {
-            position: relative;
+        &:after {
+            @extend %active-nav-item;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            -webkit-transform: translateX(-50%) scaleX(0);
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            width: 100%;
+            transition: transform 250ms;
+            -webkit-transition: transform 250ms;
+        }
 
-            &:after {
-                @extend %active-nav-item;
-            }
+        &:hover:after {
+            transform: translateX(-50%) scaleX(1);
+            -webkit-transform: translateX(-50%) scaleX(1);
         }
     }
     &__logo {
@@ -121,7 +130,7 @@ button {
 }
 
 .active::after {
-    @extend %active-nav-item;
+    transform: translateX(-50%) scaleX(1);
 }
 
 .show {
@@ -245,7 +254,7 @@ button {
                 font-size: $lead;
                 color: #fff;
             }
-            
+
             .project__description {
                 color: #fafafa;
                 font-weight: 400;

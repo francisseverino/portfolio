@@ -18,7 +18,7 @@
   --about-background-color: rgb(121, 121, 255, 0.04);
 }
 
-.section-title::after, .active::after, .nav__link:hover:after {
+.section-title::after, .nav__link:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -139,13 +139,28 @@ button {
   position: relative;
   font-size: 1.25rem;
 }
-.nav__link:hover {
-  position: relative;
+.nav__link:after {
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  width: 100%;
+  transition: transform 250ms;
+  -webkit-transition: transform 250ms;
+}
+.nav__link:hover:after {
+  transform: translateX(-50%) scaleX(1);
+  -webkit-transform: translateX(-50%) scaleX(1);
 }
 .nav__logo {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.active::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .show {
