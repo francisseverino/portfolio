@@ -1,4 +1,4 @@
-:root {
+body {
     // Colors
     --primary-color: #29B4F5; //#333;
     --text-color: #333;
@@ -11,7 +11,7 @@
     --about-background-color: rgb(248, 248, 255);
 }
 
-[data-theme="dark"] {
+body.dark-theme {
     --text-color: #fff;
     // --text-color: #f7fcff;
     --secondary-text-color: #EEE;
@@ -19,6 +19,27 @@
     --secondary-background-color: rgb(69, 69, 69);
     --projects-background-color: rgb(255, 125, 138, 0.04);
     --about-background-color: rgb(121, 121, 255, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        --text-color: #fff;
+        --secondary-text-color: #EEE;
+        --background-color: #333;
+        --secondary-background-color: rgb(69, 69, 69);
+        --projects-background-color: rgb(255, 125, 138, 0.04);
+        --about-background-color: rgb(121, 121, 255, 0.04);
+    }
+    body.light-theme {
+        --primary-color: #29B4F5; //#333;
+        --text-color: #333;
+        --secondary-text-color: #707070;
+        --background-color: #fff;
+        --secondary-background-color: #fff;
+        --projects-background-color: rgb(255, 245, 246);
+        --about-background-color: rgb(248, 248, 255);
+    }
 }
 
     $header-height: 4rem;

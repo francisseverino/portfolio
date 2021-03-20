@@ -65,23 +65,48 @@ const navIndicatorOnScroll = () => {
   });
 };
 
-const switchThemes = () => {
+const toggleThemeIcon = theme => {
   const themeSwitcher = document.getElementById('theme-switcher');
   const themeSwitcherIcon = themeSwitcher.getElementsByClassName('far')[0];
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-
-  let switchToTheme = '';
-  if (currentTheme === 'dark') {
-    switchToTheme = 'light';
+  if (theme === 'light') {
     themeSwitcherIcon.classList.remove('fa-sun');
     themeSwitcherIcon.classList.add('fa-moon');
-  } else {
-    switchToTheme = 'dark';
+  } else if (theme === 'dark') {
     themeSwitcherIcon.classList.remove('fa-moon');
     themeSwitcherIcon.classList.add('fa-sun');
   }
+};
 
-  document.documentElement.setAttribute('data-theme', switchToTheme);
+const switchThemes = () => {
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  let newTheme = '';
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle('light-theme');
+    newTheme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
+    toggleThemeIcon(newTheme);
+  } else {
+    document.body.classList.toggle('dark-theme');
+    newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+    toggleThemeIcon(newTheme);
+  }
+
+  localStorage.setItem('theme', newTheme);
+};
+
+const darkMode = () => {
+  const themeSwitcher = document.getElementById('theme-switcher');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.body.classList.toggle('dark-theme');
+    toggleThemeIcon('dark');
+  } else if (currentTheme === 'light') {
+    document.body.classList.toggle('light-theme');
+    toggleThemeIcon('light');
+  }
+
+  themeSwitcher.addEventListener('click', switchThemes);
 };
 
 //Back to top button
@@ -140,8 +165,7 @@ window.addEventListener('load', function init() {
   navLink.forEach(n => n.addEventListener('click', linkAction));
   navIndicatorOnScroll();
 
-  const themeSwitcher = document.getElementById('theme-switcher');
-  themeSwitcher.addEventListener('click', switchThemes);
+  darkMode();
   scrollTop();
 
   modal();
