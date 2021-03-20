@@ -23,7 +23,6 @@ body.dark-theme {
 }
 
 @media (prefers-color-scheme: dark) {
-  /* defaults to dark theme */
   body {
     --text-color: #fff;
     --secondary-text-color: #EEE;
@@ -499,7 +498,6 @@ input[type=checkbox]:checked ~ span:nth-of-type(3) {
 
 .button {
   display: inline-block;
-  width: 100%;
   color: #fff;
   padding: 1rem 2.8rem;
   border-radius: 12px;
