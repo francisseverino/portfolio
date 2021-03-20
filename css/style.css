@@ -9,15 +9,17 @@ body {
   --secondary-text-color: #707070;
   --background-color: #fff;
   --secondary-background-color: #fff;
-  --projects-background-color: rgb(255, 245, 246);
-  --about-background-color: rgb(248, 248, 255);
+  --tertiary-background-color: #fff;
+  --projects-background-color: #fff5f6;
+  --about-background-color: #f8f8ff;
 }
 
 body.dark-theme {
   --text-color: #fff;
   --secondary-text-color: #EEE;
   --background-color: #333;
-  --secondary-background-color: rgb(69, 69, 69);
+  --secondary-background-color: #454545;
+  --tertiary-background-color: #505050;
   --projects-background-color: rgb(255, 125, 138, 0.04);
   --about-background-color: rgb(121, 121, 255, 0.04);
 }
@@ -27,7 +29,8 @@ body.dark-theme {
     --text-color: #fff;
     --secondary-text-color: #EEE;
     --background-color: #333;
-    --secondary-background-color: rgb(69, 69, 69);
+    --secondary-background-color: #454545;
+    --tertiary-background-color: #505050;
     --projects-background-color: rgb(255, 125, 138, 0.04);
     --about-background-color: rgb(121, 121, 255, 0.04);
   }
@@ -38,8 +41,9 @@ body.dark-theme {
     --secondary-text-color: #707070;
     --background-color: #fff;
     --secondary-background-color: #fff;
-    --projects-background-color: rgb(255, 245, 246);
-    --about-background-color: rgb(248, 248, 255);
+    --tertiary-background-color: #fff;
+    --projects-background-color: #fff5f6;
+    --about-background-color: #f8f8ff;
   }
 }
 .section-title::after, .nav__link:after {
@@ -368,7 +372,7 @@ button {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  background-color: var(--secondary-background-color);
+  background-color: var(--tertiary-background-color);
   box-shadow: 11px 11px 20px 0 rgba(19, 15, 73, 0.05);
   cursor: pointer;
 }
@@ -502,7 +506,7 @@ input[type=checkbox]:checked ~ span:nth-of-type(3) {
   padding: 1rem 2.8rem;
   border-radius: 12px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 20px 5px;
   transition: transform 0.2s ease-out;
   font-size: 16px;
   box-shadow: 0px 4px 23px rgba(60, 60, 60, 0.1);
@@ -597,7 +601,6 @@ input[type=checkbox]:checked ~ span:nth-of-type(3) {
   }
 
   .button {
-    width: auto;
     margin: 10px;
   }
 }
