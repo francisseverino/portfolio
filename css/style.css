@@ -308,6 +308,9 @@ button {
   font-size: 0.938rem;
   color: #fff;
 }
+.projects .card .project__info .project__button {
+  background-color: #fff;
+}
 .projects .card .project__info .project__description {
   color: #fafafa;
   font-weight: 400;
