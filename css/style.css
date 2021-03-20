@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
 :root {
-  --primary-color: #4070f4;
+  --primary-color: #29B4F5;
   --text-color: #333;
   --secondary-text-color: #707070;
   --background-color: #fff;
@@ -11,7 +11,7 @@
 
 [data-theme=dark] {
   --text-color: #fff;
-  --secondary-text-color: #f7fcff;
+  --secondary-text-color: #EEE;
   --background-color: #333;
   --secondary-background-color: rgb(69, 69, 69);
   --projects-background-color: rgb(255, 125, 138, 0.04);
@@ -271,7 +271,7 @@ button {
   padding: 16px;
   color: #ffffff;
 }
-.projects .card .project__info h4 {
+.projects .card .project__info h3 {
   font-size: 0.938rem;
   color: #fff;
 }

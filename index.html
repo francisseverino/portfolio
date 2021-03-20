@@ -6,6 +6,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+            content="Technical and diligent professional with hands-on experience in software development with a keen focus on innovation." />
+        <meta name="author" content="Francis Severino" />
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+        <meta property="og:site_name" content="Francis Severino" />
+        <!-- website name -->
+        <meta property="og:site" content="https://francisseverino.com" />
+        <!-- website link -->
+        <meta property="og:title" content="Autove - Find Auto Parts" />
+        <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="Find auto parts, paint codes, information and more for any vehicle." />
+        <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="https://francisseverino.com/images/logo.svg" />
+        <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="https://francisseverino.com" />
+        <!-- where do you want your post to link to -->
+        <meta property="og:type" content="portfolio" />
+
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
             integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
@@ -48,12 +68,17 @@
                             <li class="nav__item"><a href="mailto:francisjsg02@gmail.com" class="nav__link">Contact</a>
                             </li>
                             <li class="nav__item">
-                                <a href="https://www.linkedin.com/in/francisseverino/" target="_blank"
-                                    class="nav__item__social-icon"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/francisseverino" target="_blank"
-                                    class="nav__item__social-icon"><i class="fab fa-github"></i></a>
-                                <button id="theme-switcher"><i id="theme-switcher-icon"
-                                        class="far fa-moon"></i></button>
+                                <a href="https://www.linkedin.com/in/francisseverino/" target="_blank" rel="noreferrer"
+                                    class="nav__item__social-icon" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/francisseverino" target="_blank" rel="noreferrer"
+                                    class="nav__item__social-icon" aria-label="Github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <button id="theme-switcher" aria-label="Dark-theme switch">
+                                    <i id="theme-switcher-icon" class="far fa-moon"></i>
+                                </button>
                             </li>
 
                         </ul>
@@ -162,7 +187,7 @@
                     <div class="card">
                         <img src="./images/projects/hw-todo.png" alt="">
                         <div class="project__info">
-                            <h4>SocialApp</h4>
+                            <h3>SocialApp</h3>
                             <button class="project__button button button-secondary" data-id="socialapp">
                                 <span>Learn More</span>
                             </button>
@@ -172,7 +197,7 @@
                     <div class="card">
                         <img src="./images/projects/hw-todo.png" alt="">
                         <div class="project__info">
-                            <h4>Autove</h4>
+                            <h3>Autove</h3>
                             <button class="project__button button button-secondary" data-id="autove">
                                 <span>Learn More</span>
                             </button>
@@ -182,7 +207,7 @@
                     <div class="card">
                         <img src="./images/projects/hw-todo.png" alt="">
                         <div class="project__info">
-                            <h4>Flixo</h4>
+                            <h3>Flixo</h3>
                             <button class="project__button button button-secondary" data-id="flixo">
                                 <span>Learn More</span>
                             </button>
@@ -192,7 +217,7 @@
                     <div class="card">
                         <img src="./images/projects/hw-todo.png" alt="">
                         <div class="project__info">
-                            <h4>HW TODO</h4>
+                            <h3>HW TODO</h3>
                             <button class="project__button button button-secondary" data-id="hw-todo">
                                 <span>Learn More</span>
                             </button>
@@ -207,7 +232,7 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="scroll-top">
-                <button id="scroll-top-button">
+                <button id="scroll-top-button" aria-label="Scroll to top">
                     <i class="fas fa-arrow-up"></i>
                 </button>
             </div>
