@@ -30,14 +30,24 @@
     height: 100%;
 }
 
+.section-title-lead {
+    color: color(secondary-text);
+    font-size: $sm;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .section-title{
     position: relative;
-    color: color(primary);
-    margin-top: $m-2;
+    color: color(text);
+    margin-top: $m-1;
     margin-bottom: $m-4;
+    font-size: $lg;
+    letter-spacing: 1px;
 
     &::after{
         @extend %active-nav-item;
-        width: 64px;
+        width: 6rem;
     }
 }
