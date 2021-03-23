@@ -240,7 +240,8 @@ button {
             position: absolute;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             left: 0;
             top: 0;
             height: 100%;
@@ -253,18 +254,21 @@ button {
             color: #ffffff;
 
             h3 {
-                font-size: $lead;
+                font-size: $lg;
                 color: #fff;
             }
 
             .project__button {
-                background-color: #fff;
+                margin: 30px 0;
+                padding: 0.8rem 2rem;
+                box-shadow: none;
+                border-radius: 10px;
             }
     
             .project__footer {
                 font-size: $sm;
-                text-align: right;
-                margin-top: $m-2;
+                // text-align: right;
+                // margin-top: $m-2;
             }
         }
 
