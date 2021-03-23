@@ -5,20 +5,24 @@ const modalData = {
     title: 'HW Todo',
     description:
       'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
+    image: './images/projects/hw-todo.png',
   },
   socialapp: {
     title: 'SocialApp',
     description:
       'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
+    image: './images/projects/hw-todo.png',
   },
   autove: {
     title: 'Autove',
     description:
       'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
+    image: './images/projects/autove.jpg',
   },
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
+    image: './images/projects/hw-todo.png',
   },
 };
 
@@ -139,7 +143,8 @@ const modal = () => {
     project.onclick = function () {
       modal.style.display = 'block';
       const { id } = this.dataset;
-      console.log(id);
+
+      document.getElementById('modal-image').src = modalData[id].image;
       document.getElementById('modal-header').textContent = modalData[id].title;
       document.getElementById('modal-description').textContent = modalData[id].description;
     };
