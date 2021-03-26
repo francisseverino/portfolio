@@ -22,7 +22,7 @@ const modalData = {
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    image: './images/projects/hw-todo.png',
+    image: './images/projects/flixo.png',
   },
 };
 
