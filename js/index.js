@@ -5,24 +5,24 @@ const modalData = {
     title: 'HW Todo',
     description:
       'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
-    image: './images/projects/hw-todo.png',
+    images: ['./images/projects/hw-todo.png', './images/projects/hw-todo1.png'],
   },
   socialapp: {
     title: 'SocialApp',
     description:
       'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
-    image: './images/projects/hw-todo.png',
+    images: ['./images/projects/hw-todo.png'],
   },
   autove: {
     title: 'Autove',
     description:
       'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
-    image: './images/projects/autove.jpg',
+    images: ['./images/projects/autove.jpg'],
   },
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    image: './images/projects/flixo.png',
+    images: ['./images/projects/flixo.png'],
   },
 };
 
@@ -131,6 +131,72 @@ const scrollTop = () => {
   });
 };
 
+// Slideshow
+const slideshow = id => {
+  let slideIndex = 1;
+  let container = document.getElementById('slides');
+  let dotsContainer = document.getElementById('slideshow-dots');
+
+  //Reset content
+  container.innerHTML = '';
+  dotsContainer.innerHTML = '';
+
+  //Loading images
+  modalData[id].images.map((image, index) => {
+    container.innerHTML += `<div class="slide ${index === 0 ? 'show' : ''}">
+        <div class="slide__number">${index + 1} / ${modalData[id].images.length}</div>
+        <img src=${image} style="width:100%">
+      </div>`;
+    dotsContainer.innerHTML += `<span class="dot" data-slideNumber=${index + 1}></span>`;
+  });
+
+  let dots = document.getElementsByClassName('dot');
+  for (let dot of dots) {
+    dot.addEventListener('click', e => {
+      showSlides(parseInt(e.target.dataset.slidenumber));
+    });
+  }
+
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+
+  prevButton.addEventListener('click', () => {
+    showSlides(slideIndex - 1);
+  });
+
+  nextButton.addEventListener('click', () => {
+    showSlides(slideIndex + 1);
+  });
+
+  showSlides(slideIndex);
+
+  function showSlides(index) {
+    let i;
+    let slides = document.getElementsByClassName('slide');
+    dots = document.getElementsByClassName('dot');
+
+    if (index > modalData[id].images.length) {
+      index = 1;
+    }
+    if (index < 1) {
+      index = modalData[id].images.length;
+    }
+
+    for (i = 0; i < modalData[id].images.length; i++) {
+      slides[i].classList.remove('show');
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].classList.remove('active');
+    }
+    slides[index - 1].classList.add('show');
+    dots[index - 1].classList.add('active');
+    slideIndex = index;
+    setTimeout(() => {
+      showSlides(index + 1);
+    }, 4000);
+  }
+};
+
 // Modal
 const modal = () => {
   // Get the modal
@@ -144,7 +210,9 @@ const modal = () => {
       modal.style.display = 'block';
       const { id } = this.dataset;
 
-      document.getElementById('modal-image').src = modalData[id].image;
+      slideshow(id);
+
+      // document.getElementById('modal-image').src = modalData[id].image;
       document.getElementById('modal-header').textContent = modalData[id].title;
       document.getElementById('modal-description').textContent = modalData[id].description;
     };
