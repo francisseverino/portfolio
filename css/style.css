@@ -28,9 +28,9 @@ body.dark-theme {
   body {
     --text-color: #fff;
     --secondary-text-color: #EEE;
-    --background-color: #333;
-    --secondary-background-color: #454545;
-    --tertiary-background-color: #505050;
+    --background-color: #212121;
+    --secondary-background-color: #333;
+    --tertiary-background-color: #454545;
     --portfolio-background-color: rgb(255, 125, 138, 0.04);
     --about-background-color: rgb(121, 121, 255, 0.04);
   }
@@ -384,33 +384,22 @@ button {
   opacity: 1;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 3;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
   padding: 20px;
-  /* Modal Content/Box */
-  /* The Close Button */
 }
 .modal__content {
   position: relative;
   background-color: var(--secondary-background-color);
   margin: 5% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   border-radius: 10px;
   max-width: 768px;
@@ -419,11 +408,19 @@ button {
 .modal__header {
   text-align: center;
   font-weight: 300;
-  color: var(--secondary-text-color);
+  margin: 0;
 }
 .modal__body {
   padding: 20px 24px;
   border-radius: 4px;
+}
+.modal__body .modal__link {
+  display: block;
+  text-align: center;
+}
+.modal__body .modal__link .modal__website {
+  font-size: 0.8rem;
+  color: var(--primary-color);
 }
 .modal__close {
   display: flex;
@@ -456,9 +453,7 @@ button {
   /* Slideshow container */
   /* Hide the images by default */
   /* Next & previous buttons */
-  /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */
-  /* The dots/bullets/indicators */
 }
 .slideshow__container {
   max-width: 1000px;
@@ -500,24 +495,27 @@ button {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.slideshow .prev i, .slideshow .next i {
+  color: white;
 }
 .slideshow .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
 }
 .slideshow .prev:hover, .slideshow .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.slideshow .slideshow__dots {
+.slideshow__dots {
   text-align: center;
 }
-.slideshow .dot {
+.slideshow__dots .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -527,7 +525,7 @@ button {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.slideshow .active, .slideshow .dot:hover {
+.slideshow__dots .active, .slideshow__dots .dot:hover {
   background-color: #717171;
 }
 @-webkit-keyframes fade {

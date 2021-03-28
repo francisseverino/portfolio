@@ -6,23 +6,39 @@ const modalData = {
     description:
       'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
     images: ['./images/projects/hw-todo.png', './images/projects/hw-todo1.png'],
+    link: {
+      label: 'GitHub',
+      value: 'https://github.com/francisseverino/hw-todo',
+    },
   },
   socialapp: {
     title: 'SocialApp',
     description:
       'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
     images: ['./images/projects/hw-todo.png'],
+    link: {
+      label: '',
+      value: '',
+    },
   },
   autove: {
     title: 'Autove',
     description:
       'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
     images: ['./images/projects/autove.jpg'],
+    link: {
+      label: 'Website',
+      value: 'https://autove.fixove.com',
+    },
   },
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
     images: ['./images/projects/flixo.png'],
+    link: {
+      label: 'GitHub',
+      value: 'https://github.com/francisseverino/Flixo',
+    },
   },
 };
 
@@ -135,11 +151,9 @@ const scrollTop = () => {
 const slideshow = id => {
   let slideIndex = 1;
   let container = document.getElementById('slides');
-  let dotsContainer = document.getElementById('slideshow-dots');
 
   //Reset content
   container.innerHTML = '';
-  dotsContainer.innerHTML = '';
 
   //Loading images
   modalData[id].images.map((image, index) => {
@@ -147,15 +161,7 @@ const slideshow = id => {
         <div class="slide__number">${index + 1} / ${modalData[id].images.length}</div>
         <img src=${image} style="width:100%">
       </div>`;
-    dotsContainer.innerHTML += `<span class="dot" data-slideNumber=${index + 1}></span>`;
   });
-
-  let dots = document.getElementsByClassName('dot');
-  for (let dot of dots) {
-    dot.addEventListener('click', e => {
-      showSlides(parseInt(e.target.dataset.slidenumber));
-    });
-  }
 
   const prevButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
@@ -173,7 +179,6 @@ const slideshow = id => {
   function showSlides(index) {
     let i;
     let slides = document.getElementsByClassName('slide');
-    dots = document.getElementsByClassName('dot');
 
     if (index > modalData[id].images.length) {
       index = 1;
@@ -185,15 +190,13 @@ const slideshow = id => {
     for (i = 0; i < modalData[id].images.length; i++) {
       slides[i].classList.remove('show');
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('active');
-    }
+
     slides[index - 1].classList.add('show');
-    dots[index - 1].classList.add('active');
     slideIndex = index;
-    setTimeout(() => {
-      showSlides(index + 1);
-    }, 4000);
+
+    // setTimeout(() => {
+    //   showSlides(index + 1);
+    // }, 4000);
   }
 };
 
@@ -212,8 +215,9 @@ const modal = () => {
 
       slideshow(id);
 
-      // document.getElementById('modal-image').src = modalData[id].image;
       document.getElementById('modal-header').textContent = modalData[id].title;
+      document.getElementById('modal-website').textContent = modalData[id].link.label;
+      document.getElementById('modal-website').href = modalData[id].link.value;
       document.getElementById('modal-description').textContent = modalData[id].description;
     };
   }
