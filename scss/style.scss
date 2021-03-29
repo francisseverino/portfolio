@@ -280,8 +280,6 @@ button {
     
             .project__footer {
                 font-size: $sm;
-                // text-align: right;
-                // margin-top: $m-2;
             }
         }
 
@@ -317,7 +315,7 @@ button {
 // Footer
 .footer {
     padding: $m-4 0;
-    font-size: 12px; // ? Should I keep it with rems or px?
+    font-size: 12px;
 }
 
 // Scroll Top button
