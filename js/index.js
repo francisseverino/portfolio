@@ -15,7 +15,12 @@ const modalData = {
     title: 'SocialApp',
     description:
       'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
-    images: ['./images/projects/hw-todo.png'],
+    images: [
+      './images/projects/socialapp1.png',
+      './images/projects/socialapp2.png',
+      './images/projects/socialapp3.png',
+      './images/projects/socialapp4.png',
+    ],
     link: {
       label: '',
       value: '',
@@ -25,7 +30,7 @@ const modalData = {
     title: 'Autove',
     description:
       'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
-    images: ['./images/projects/autove.jpg'],
+    images: ['./images/projects/autove1.png', './images/projects/autove2.png'],
     link: {
       label: 'Website',
       value: 'https://autove.fixove.com',
@@ -34,7 +39,7 @@ const modalData = {
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    images: ['./images/projects/flixo.png'],
+    images: ['./images/projects/flixo1.png', './images/projects/flixo2.png'],
     link: {
       label: 'GitHub',
       value: 'https://github.com/francisseverino/Flixo',

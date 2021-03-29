@@ -36,7 +36,6 @@ body.dark-theme {
   }
 
   body.light-theme {
-    --primary-color: #29B4F5;
     --text-color: #333;
     --secondary-text-color: #707070;
     --background-color: #fff;
@@ -157,8 +156,24 @@ button {
     transition: 0.5s;
   }
 }
+@media (max-height: 500px) {
+  .nav__menu {
+    width: 40%;
+  }
+}
 .nav__item {
   margin-bottom: 2.5rem;
+}
+@media (max-height: 500px) {
+  .nav__item {
+    margin-bottom: 1rem;
+  }
+  .nav__item a {
+    font-size: 0.938rem;
+  }
+  .nav__item i {
+    font-size: 1.25rem;
+  }
 }
 .nav__item i {
   margin-right: 1rem;

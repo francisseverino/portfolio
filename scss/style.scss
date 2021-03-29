@@ -90,10 +90,22 @@ button {
             background-color: color(secondary-background);
             transition: .5s;
         }
+        @media(max-height: 500px) {
+            width: 40%;
+        }
     }
 
     &__item {
         margin-bottom: $m-5;
+        @media(max-height: 500px) {
+            margin-bottom: $m-2;
+            a {
+                font-size: $lead;
+            }
+            i {
+                font-size: $md;
+            }
+        }
 
         i {
             @extend %icon;
@@ -151,6 +163,7 @@ button {
     &__title {
         font-size: $xl;
         margin-bottom: $m-5;
+
         @media(max-height: 700px) {
             font-size: 3rem;
         }
