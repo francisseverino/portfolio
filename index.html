@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="color-scheme" content="dark light">
+
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+            content="Technical and diligent professional with hands-on experience in software development with a keen focus on innovation." />
+        <meta name="author" content="Francis Severino" />
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+        <meta property="og:site_name" content="Francis Severino" />
+        <!-- website name -->
+        <meta property="og:site" content="https://francisseverino.com" />
+        <!-- website link -->
+        <meta property="og:title" content="Francis Severino" />
+        <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="Find auto parts, paint codes, information and more for any vehicle." />
+        <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="https://francisseverino.com/images/logo.svg" />
+        <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="https://francisseverino.com" />
+        <!-- where do you want your post to link to -->
+        <meta property="og:type" content="website" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Francis Severino</title>
+    </head>
+
+    <body>
+
+        <!-- The Modal -->
+        <div id="modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal__content">
+                <button class="modal__close"><i class="fas fa-times"></i></button>
+                <div class="slideshow">
+                    <!-- Slideshow container -->
+                    <div id="slideshow-container" class="slideshow__container">
+                        <div id="slides"></div>
+
+                        <!-- Next and previous buttons -->
+                        <a id="prev" class="prev"><i class="fas fa-chevron-left"></i></a>
+                        <a id="next" class="next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <h1 id="modal-header" class="modal__header">Modal</h1>
+                    <div class="modal__link">
+                        <a href="" target="_blank" id="modal-website" class="modal__website">GitHub</a>
+                    </div>
+                    <p id="modal-description" class="modal__description"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <header>
+            <!-- Navbar -->
+            <nav class="nav">
+                <div class="container flex">
+                    <div>
+                        <a href="#" class="nav__logo">Francis Severino</a>
+                    </div>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                            <li class="nav__item"><a href="mailto:francisjsg02@gmail.com" class="nav__link">Contact</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="https://www.linkedin.com/in/francisseverino/" target="_blank" rel="noreferrer"
+                                    class="nav__item__social-icon" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/francisseverino" target="_blank" rel="noreferrer"
+                                    class="nav__item__social-icon" aria-label="Github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <button id="theme-switcher" aria-label="Dark-theme switch">
+                                    <i id="theme-switcher-icon" class="far fa-moon"></i>
+                                </button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="nav__toggle">
+                        <label for="nav-toggle">
+                            <input type="checkbox" id="nav-toggle" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="container flex">
+                <div>
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Francis</span><br>Software
+                        Developer</h1>
+                    <button class="button button-primary" onclick="location.href='mailto:francisjsg02@gmail.com';">
+                        <span href="">Contact</span>
+                    </button>
+                    <button class="button button-secondary"
+                        onclick="location.href='https://drive.google.com/file/d/1_Q340WwSesmdp_rWPFe_EVuS2l4S9vv5/view?usp=sharing';">
+                        <span href="#">Resume</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="card">
+                    <h2 class="section-title-lead">About Me</h2>
+                    <h1 class="section-title">Who am I?</h1>
+                    <div class="about__detail grid">
+                        <div class="about__description">
+                            <p>
+                                I am a current Computer Science graduate with technical and diligent professional with
+                                hands-on experience in software development
+                                with a keen focus on innovation who is looking for a full-time software engineer
+                                position.
+                            </p>
+                        </div>
+                        <div>
+                            <ul class="about__skills flex">
+                                <li class="skill">
+                                    <i class='fab fa-html5'></i>
+                                    <p>HTML 5</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-css3'></i>
+                                    <p>CSS</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-sass'></i>
+                                    <p>SASS</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-js-square'></i>
+                                    <p>JavaScript</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-react'></i>
+                                    <p>React</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-php'></i>
+                                    <p>PHP</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-python'></i>
+                                    <p>Python</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fab fa-java'></i>
+                                    <p>Java</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fa fa-database'></i>
+                                    <p>SQL</p>
+                                </li>
+                                <li class="skill">
+                                    <i class='fas fa-fire'></i>
+                                    <p>Firebase</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__section-background"></div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section-title-lead">Portfolio</h2>
+                <h1 class="section-title">My Recent Work</h1>
+                <div class="grid">
+                    <div class="project card">
+                        <img class="project__img" src="./images/projects/socialapp1.png" alt="">
+                        <div class="project__info">
+                            <h3>SocialApp</h3>
+                            <button class="project__button button button-secondary" data-id="socialapp">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React Native | Django | AWS</p>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <img class="project__img" src="./images/projects/autove1.png" alt="">
+                        <div class="project__info">
+                            <h3>Autove</h3>
+                            <button class="project__button button button-secondary" data-id="autove">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React Native | Laravel | Firebase</p>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <img class="project__img" src="./images/projects/flixo1.png" alt="">
+                        <div class="project__info">
+                            <h3>Flixo</h3>
+                            <button class="project__button button button-secondary" data-id="flixo">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React | TheMovieDB</p>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <img class="project__img" src="./images/projects/hw-todo.png" alt="">
+                        <div class="project__info">
+                            <h3>HW TODO</h3>
+                            <button class="project__button button button-secondary" data-id="hw-todo">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">Flask | Canvas LMS | Twilio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__section-background"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="scroll-top">
+                <button id="scroll-top-button" aria-label="Scroll to top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+            <div class="container flex">
+                <p>Copyright &copy; 2021 Francis Severino - All rights reserved</p>
+            </div>
+        </footer>
+
+        <!-- JS Script File -->
+        <script src="js/index.js"></script>
+    </body>
+
+</html>
