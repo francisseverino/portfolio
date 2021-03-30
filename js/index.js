@@ -5,11 +5,13 @@ const modalData = {
     title: 'HW Todo',
     description:
       'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
-    images: ['./images/projects/hw-todo.png', './images/projects/hw-todo1.png'],
-    link: {
-      label: 'GitHub',
-      value: 'https://github.com/francisseverino/hw-todo',
-    },
+    images: ['./images/projects/hw-todo1.png', './images/projects/hw-todo2.png'],
+    links: [
+      {
+        label: 'GitHub',
+        value: 'https://github.com/francisseverino/hw-todo',
+      },
+    ],
   },
   socialapp: {
     title: 'SocialApp',
@@ -21,29 +23,45 @@ const modalData = {
       './images/projects/socialapp3.png',
       './images/projects/socialapp4.png',
     ],
-    link: {
-      label: '',
-      value: '',
-    },
+    links: [],
   },
   autove: {
     title: 'Autove',
     description:
       'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
     images: ['./images/projects/autove1.png', './images/projects/autove2.png'],
-    link: {
-      label: 'Website',
-      value: 'https://autove.fixove.com',
-    },
+    links: [
+      {
+        label: 'Website',
+        value: 'https://autove.fixove.com',
+      },
+    ],
   },
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
     images: ['./images/projects/flixo1.png', './images/projects/flixo2.png'],
-    link: {
-      label: 'GitHub',
-      value: 'https://github.com/francisseverino/Flixo',
-    },
+    links: [
+      {
+        label: 'GitHub',
+        value: 'https://github.com/francisseverino/Flixo',
+      },
+    ],
+  },
+  'covid-19': {
+    title: 'COVID-19',
+    description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
+    images: ['./images/projects/covid1.png', './images/projects/covid2.png', './images/projects/covid3.png'],
+    links: [
+      {
+        label: 'Website',
+        value: 'https://francisseverino.github.io/covid19-app/',
+      },
+      {
+        label: 'GitHub',
+        value: 'https://github.com/francisseverino/covid19-app',
+      },
+    ],
   },
 };
 
@@ -221,9 +239,16 @@ const modal = () => {
       slideshow(id);
 
       document.getElementById('modal-header').textContent = modalData[id].title;
-      document.getElementById('modal-website').textContent = modalData[id].link.label;
-      document.getElementById('modal-website').href = modalData[id].link.value;
       document.getElementById('modal-description').textContent = modalData[id].description;
+
+      // <a href="" target="_blank" id="modal-website" class="modal__website">GitHub</a>
+
+      const linksContainer = document.getElementById('modal-links');
+      linksContainer.innerHTML = '';
+
+      modalData[id].links.map((link, index) => {
+        linksContainer.innerHTML += `<a href=${link.value} target="_blank" class="modal__website">${link.label}</a>`;
+      });
     };
   }
 
