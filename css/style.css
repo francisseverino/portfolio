@@ -429,13 +429,14 @@ button {
   padding: 20px 24px;
   border-radius: 4px;
 }
-.modal__body .modal__link {
+.modal__body .modal__links {
   display: block;
   text-align: center;
 }
-.modal__body .modal__link .modal__website {
+.modal__body .modal__links .modal__website {
   font-size: 0.8rem;
   color: var(--primary-color);
+  margin: 0 8px;
 }
 .modal__close {
   display: flex;

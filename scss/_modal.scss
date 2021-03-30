@@ -31,12 +31,13 @@
       padding: 20px 24px;
       border-radius: 4px;
 
-      .modal__link {
+      .modal__links {
         display: block;
         text-align: center;
         .modal__website {
             font-size: $sm;
             color: color(primary);
+            margin: 0 8px;
         }
       }
     }
