@@ -155,6 +155,7 @@ button {
     @media(min-height: 700px) {
         height: calc(92vh);
     }
+    position: relative;
 
     .flex {
         justify-content: flex-start;
@@ -361,6 +362,7 @@ button {
 
 @import 'modal';
 @import 'slideshow';
+@import 'effects';
 @import 'menu';
 @import 'button';
 @import 'utilities';
