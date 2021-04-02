@@ -156,7 +156,7 @@ button {
     transition: 0.5s;
   }
 }
-@media (max-height: 500px) {
+@media (max-width: 768px) and (max-height: 500px) {
   .nav__menu {
     width: 40%;
   }

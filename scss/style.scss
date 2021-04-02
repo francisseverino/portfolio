@@ -89,9 +89,9 @@ button {
             padding: 2rem;
             background-color: color(secondary-background);
             transition: .5s;
-        }
-        @media(max-height: 500px) {
-            width: 40%;
+            @media(max-height: 500px) {
+                width: 40%;
+            }
         }
     }
 
