@@ -20,13 +20,18 @@
         <!-- website link -->
         <meta property="og:title" content="Francis Severino" />
         <!-- title shown in the actual shared post -->
-        <meta property="og:description" content="Find auto parts, paint codes, information and more for any vehicle." />
+        <meta property="og:description"
+            content="Technical and diligent professional with hands-on experience in software development with a keen focus on innovation." />
         <!-- description shown in the actual shared post -->
-        <meta property="og:image" content="https://francisseverino.com/images/logo.svg" />
+        <meta property="og:image" content="https://francisseverino.com/images/screenshot.png" />
         <!-- image link, make sure it's jpg -->
         <meta property="og:url" content="https://francisseverino.com" />
         <!-- where do you want your post to link to -->
         <meta property="og:type" content="website" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -37,28 +42,25 @@
         <title>Francis Severino</title>
     </head>
 
-    <body>
+    <body onclick>
 
-        <!-- The Modal -->
+        <!-- Modal -->
         <div id="modal" class="modal">
 
-            <!-- Modal content -->
             <div class="modal__content">
                 <button class="modal__close"><i class="fas fa-times"></i></button>
                 <div class="slideshow">
-                    <!-- Slideshow container -->
                     <div id="slideshow-container" class="slideshow__container">
                         <div id="slides"></div>
 
-                        <!-- Next and previous buttons -->
                         <a id="prev" class="prev"><i class="fas fa-chevron-left"></i></a>
                         <a id="next" class="next"><i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="modal__body">
                     <h1 id="modal-header" class="modal__header">Modal</h1>
-                    <div class="modal__link">
-                        <a href="" target="_blank" id="modal-website" class="modal__website">GitHub</a>
+                    <div id="modal-links" class="modal__links">
+
                     </div>
                     <p id="modal-description" class="modal__description"></p>
                 </div>
@@ -112,6 +114,58 @@
 
         <!-- Home -->
         <section class="home" id="home">
+            <!-- Effects start -->
+            <div class="effect-wrap">
+                <div class="effect effect-1"></div>
+                <div class="effect effect-2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="effect effect-3"></div>
+                <div class="effect effect-4"></div>
+                <div class="effect effect-5">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="effect effect-6">
+                    <span>FS</span>
+                </div>
+            </div>
+            <!-- Effects end -->
             <div class="container flex">
                 <div>
                     <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Francis</span><br>Software
@@ -138,7 +192,7 @@
                     <div class="about__detail grid">
                         <div class="about__description">
                             <p>
-                                I am a current Computer Science graduate with technical and diligent professional with
+                                I am a Computer Science graduate with technical and diligent professional with
                                 hands-on experience in software development
                                 with a keen focus on innovation who is looking for a full-time software engineer
                                 position.
@@ -231,13 +285,23 @@
                         </div>
                     </div>
                     <div class="project card">
-                        <img class="project__img" src="./images/projects/hw-todo.png" alt="">
+                        <img class="project__img" src="./images/projects/hw-todo1.png" alt="">
                         <div class="project__info">
                             <h3>HW TODO</h3>
                             <button class="project__button button button-secondary" data-id="hw-todo">
                                 <span>Learn More</span>
                             </button>
                             <p class="project__footer">Flask | Canvas LMS | Twilio</p>
+                        </div>
+                    </div>
+                    <div class="project card">
+                        <img class="project__img" src="./images/projects/covid1.png" alt="">
+                        <div class="project__info">
+                            <h3>COVID-19</h3>
+                            <button class="project__button button button-secondary" data-id="covid-19">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React | Bootstrap</p>
                         </div>
                     </div>
                 </div>
