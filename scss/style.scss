@@ -199,16 +199,14 @@ button {
                 font-size: 10px;
                 line-height: 1.2;
             }
-            i {
-                font-size: $lg;
+            svg {
+                width: 40px;
+                height: 40px;
                 color: color(secondary-text);
             }
 
         }
         .skill:hover {
-            i {
-                color: color(primary);
-            }
             color: color(primary);
         }
     }

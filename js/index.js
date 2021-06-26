@@ -16,7 +16,7 @@ const modalData = {
   socialapp: {
     title: 'SocialApp',
     description:
-      'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date during the COVID-19 pandemic.',
+      'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date.',
     images: [
       './images/projects/socialapp1.png',
       './images/projects/socialapp2.png',
@@ -28,7 +28,7 @@ const modalData = {
   autove: {
     title: 'Autove',
     description:
-      'Demonstrated success in developing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
+      'Demonstrated success in designing, developing, and publishing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
     images: ['./images/projects/autove1.png', './images/projects/autove2.png'],
     links: [
       {

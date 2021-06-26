@@ -261,14 +261,12 @@ button {
   font-size: 10px;
   line-height: 1.2;
 }
-.about__skills .skill i {
-  font-size: 2rem;
+.about__skills .skill svg {
+  width: 40px;
+  height: 40px;
   color: var(--secondary-text-color);
 }
 .about__skills .skill:hover {
-  color: var(--primary-color);
-}
-.about__skills .skill:hover i {
   color: var(--primary-color);
 }
 .about__section-background {
