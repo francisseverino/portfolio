@@ -38,6 +38,11 @@
             integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
             crossorigin="anonymous" />
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script>
+            const currentTheme = localStorage.getItem('theme');
+            document.documentElement.setAttribute("data-theme", currentTheme)
+
+        </script>
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
@@ -203,18 +208,6 @@
                         <div>
                             <ul class="about__skills flex">
                                 <li class="skill">
-                                    <span class="iconify" data-icon="logos-python" data-inline="false"></span>
-                                    <p>Python</p>
-                                </li>
-                                <li class="skill">
-                                    <span class="iconify" data-icon="logos:django" data-inline="false"></span>
-                                    <p>Django</p>
-                                </li>
-                                <li class="skill">
-                                    <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
-                                    <p>Flask</p>
-                                </li>
-                                <li class="skill">
                                     <span class="iconify" data-icon="logos-javascript" data-inline="false"></span>
                                     <p>JavaScript</p>
                                 </li>
@@ -225,6 +218,18 @@
                                 <li class="skill">
                                     <span class="iconify" data-icon="logos-react" data-inline="false"></span>
                                     <p>React</p>
+                                </li>
+                                <li class="skill">
+                                    <span class="iconify" data-icon="logos-python" data-inline="false"></span>
+                                    <p>Python</p>
+                                </li>
+                                <li class="skill">
+                                    <span class="iconify" data-icon="logos:django" data-inline="false"></span>
+                                    <p>Django</p>
+                                </li>
+                                <li class="skill">
+                                    <span class="iconify" data-icon="logos:flask" data-inline="false"></span>
+                                    <p>Flask</p>
                                 </li>
                                 <li class="skill">
                                     <span class="iconify" data-icon="logos:nodejs" data-inline="false"></span>
@@ -239,12 +244,12 @@
                                     <p>AWS</p>
                                 </li>
                                 <li class="skill">
-                                    <span class="iconify" data-icon="logos:sass" data-inline="false"></span>
-                                    <p>SASS</p>
+                                    <span class="iconify" data-icon="logos:terraform-icon" data-inline="false"></span>
+                                    <p>Terraform</p>
                                 </li>
                                 <li class="skill">
-                                    <span class="iconify" data-icon="logos:php" data-inline="false"></span>
-                                    <p>PHP</p>
+                                    <span class="iconify" data-icon="logos:sass" data-inline="false"></span>
+                                    <p>SASS</p>
                                 </li>
                                 <li class="skill">
                                     <span class="iconify" data-icon="logos:postgresql" data-inline="false"></span>
@@ -280,6 +285,16 @@
                 <h2 class="section-title-lead">Portfolio</h2>
                 <h1 class="section-title">My Recent Work</h1>
                 <div class="grid">
+                    <div class="project card">
+                        <img class="project__img" src="./images/projects/beakr1.jpg" alt="">
+                        <div class="project__info">
+                            <h3>Beakr</h3>
+                            <button class="project__button button button-secondary" data-id="beakr">
+                                <span>Learn More</span>
+                            </button>
+                            <p class="project__footer">React Native | Redux | Django | AWS | PostgreSQL | Firebase</p>
+                        </div>
+                    </div>
                     <div class="project card">
                         <img class="project__img" src="./images/projects/socialapp1.jpg" alt="">
                         <div class="project__info">
@@ -343,7 +358,7 @@
                 </button>
             </div>
             <div class="container flex">
-                <p>Copyright &copy; 2021 Francis Severino - All rights reserved</p>
+                <p>Copyright &copy; 2022 Francis Severino - All rights reserved</p>
             </div>
         </footer>
 

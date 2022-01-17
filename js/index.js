@@ -1,6 +1,18 @@
 'use strict';
 
 const modalData = {
+  beakr: {
+    title: 'Beakr',
+    description:
+      'Demonstrated success in designing, developing, and publishing a social and dating mobile application utilizing the latest technologies.',
+    images: ['./images/projects/beakr1.jpg'],
+    links: [
+      {
+        label: 'Website',
+        value: 'https://beakrapp.com',
+      },
+    ],
+  },
   'hw-todo': {
     title: 'HW Todo',
     description:
@@ -121,19 +133,11 @@ const toggleThemeIcon = theme => {
 };
 
 const switchThemes = () => {
-  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const currentTheme = localStorage.getItem('theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  let newTheme = '';
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle('light-theme');
-    newTheme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
-    toggleThemeIcon(newTheme);
-  } else {
-    document.body.classList.toggle('dark-theme');
-    newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-    toggleThemeIcon(newTheme);
-  }
-
+  document.documentElement.setAttribute('data-theme', newTheme);
+  toggleThemeIcon(newTheme);
   localStorage.setItem('theme', newTheme);
 };
 
@@ -142,10 +146,8 @@ const darkMode = () => {
   const currentTheme = localStorage.getItem('theme');
 
   if (currentTheme === 'dark') {
-    document.body.classList.toggle('dark-theme');
     toggleThemeIcon('dark');
   } else if (currentTheme === 'light') {
-    document.body.classList.toggle('light-theme');
     toggleThemeIcon('light');
   }
 
