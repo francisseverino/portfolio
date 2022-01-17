@@ -1,6 +1,18 @@
 'use strict';
 
 const modalData = {
+  beakr: {
+    title: 'Beakr',
+    description:
+      'Demonstrated success in designing, developing, and publishing a social and dating mobile application utilizing the latest technologies.',
+    images: ['./images/projects/beakr1.jpg'],
+    links: [
+      {
+        label: 'Website',
+        value: 'https://beakrapp.com',
+      },
+    ],
+  },
   'hw-todo': {
     title: 'HW Todo',
     description:
