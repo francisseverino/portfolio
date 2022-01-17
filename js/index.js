@@ -5,7 +5,7 @@ const modalData = {
     title: 'HW Todo',
     description:
       'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
-    images: ['./images/projects/hw-todo1.png', './images/projects/hw-todo2.png'],
+    images: ['./images/projects/hw-todo1.jpg', './images/projects/hw-todo2.jpg'],
     links: [
       {
         label: 'GitHub',
@@ -18,10 +18,10 @@ const modalData = {
     description:
       'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date.',
     images: [
-      './images/projects/socialapp1.png',
-      './images/projects/socialapp2.png',
-      './images/projects/socialapp3.png',
-      './images/projects/socialapp4.png',
+      './images/projects/socialapp1.jpg',
+      './images/projects/socialapp2.jpg',
+      './images/projects/socialapp3.jpg',
+      './images/projects/socialapp4.jpg',
     ],
     links: [],
   },
@@ -29,7 +29,7 @@ const modalData = {
     title: 'Autove',
     description:
       'Demonstrated success in designing, developing, and publishing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
-    images: ['./images/projects/autove1.png', './images/projects/autove2.png'],
+    images: ['./images/projects/autove1.jpg', './images/projects/autove2.jpg'],
     links: [
       {
         label: 'Website',
@@ -40,7 +40,7 @@ const modalData = {
   flixo: {
     title: 'Flixo',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    images: ['./images/projects/flixo1.png', './images/projects/flixo2.png'],
+    images: ['./images/projects/flixo1.jpg', './images/projects/flixo2.jpg'],
     links: [
       {
         label: 'GitHub',
@@ -51,7 +51,7 @@ const modalData = {
   'covid-19': {
     title: 'COVID-19',
     description: 'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    images: ['./images/projects/covid1.png', './images/projects/covid2.png', './images/projects/covid3.png'],
+    images: ['./images/projects/covid1.jpg', './images/projects/covid2.jpg', './images/projects/covid3.jpg'],
     links: [
       {
         label: 'Website',
