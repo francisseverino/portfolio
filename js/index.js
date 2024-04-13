@@ -1,6 +1,18 @@
 'use strict';
 
 const modalData = {
+  monsai: {
+    title: 'Monsai',
+    description:
+      'Monsai is a personal growth app designed to be your daily companion in self-improvement. It simplifies your journey towards achieving personal goals by providing bite-sized lessons, practical tools, and progress tracking features, helping you make consistent, small steps towards big changes in areas like financial literacy, health, and personal development.',
+    images: ['./images/projects/monsai1.jpg'],
+    links: [
+      {
+        label: 'Website',
+        value: 'https://monsaiapp.com',
+      },
+    ],
+  },
   beakr: {
     title: 'Beakr',
     description:
