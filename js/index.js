@@ -6,12 +6,7 @@ const modalData = {
     description:
       'Demonstrated success in designing, developing, and publishing a social and dating mobile application utilizing the latest technologies.',
     images: ['./images/projects/beakr1.jpg'],
-    links: [
-      {
-        label: 'Website',
-        value: 'https://beakrapp.com',
-      },
-    ],
+    links: [],
   },
   'hw-todo': {
     title: 'HW Todo',
@@ -42,12 +37,7 @@ const modalData = {
     description:
       'Demonstrated success in designing, developing, and publishing a mobile application to facilitate users in finding any parts, color codes, information, and more for any vehicle by using the app.',
     images: ['./images/projects/autove1.jpg', './images/projects/autove2.jpg'],
-    links: [
-      {
-        label: 'Website',
-        value: 'https://autove.fixove.com',
-      },
-    ],
+    links: [],
   },
   flixo: {
     title: 'Flixo',
