@@ -9,6 +9,7 @@ const manrope = Manrope({
 const unbounded = Unbounded({
   subsets: ['latin'],
   variable: '--font-serif',
+  weight: '500',
 });
 
 export const metadata: Metadata = {
