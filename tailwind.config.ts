@@ -20,9 +20,9 @@ const config: Config = {
       },
     },
     extend: {
-      colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+      fontFamily: {
+        sans: 'var(--font-sans)',
+        serif: 'var(--font-serif)',
       },
     },
   },
