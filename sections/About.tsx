@@ -1,11 +1,9 @@
 import Card from '@/components/Card';
 import SectionHeader from '@/components/SectionHeader';
 import React from 'react';
-import StarIcon from '@/assets/icons/star.svg';
 import atomicHabitsImage from '@/assets/atomic-habits.png';
 import Image from 'next/image';
 import { techStack } from '@/lib/data/techStack';
-import TechIcon from '@/components/TechIcon';
 import mapImage from '@/assets/map.png';
 import smileMemoji from '@/assets/smile-memoji.png';
 import { hobbies } from '@/lib/data/hobbies';
@@ -37,11 +35,14 @@ const About = () => {
                 title='Tech Stack'
                 description="Technologies I've leveraged to build real-world solutions across professional and personal projects."
               />
-              <TechStackItems items={techStack} />
+              <TechStackItems
+                items={techStack}
+                itemsWrapClassName='animate-move-left [animation-duration:30s]'
+              />
               <TechStackItems
                 items={techStack}
                 className='mt-6'
-                itemsWrapClassName='-translate-x-1/2'
+                itemsWrapClassName='animate-move-right [animation-duration:15s]'
               />
             </Card>
           </div>
