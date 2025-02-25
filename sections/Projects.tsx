@@ -23,7 +23,7 @@ const Projects = () => {
               className='pb-0 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20'>
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                 <div className='lg:pb-16'>
-                  <div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
+                  <div className='gradient-primary inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
                     <span>{project.name}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
