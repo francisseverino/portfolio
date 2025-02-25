@@ -17,10 +17,13 @@ const Projects = () => {
           description='See how I transformed concepts into engaging digital experiences.'
         />
         <div className='flex flex-col mt-10 md:mt-20 gap-20'>
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <Card
               key={project.name}
-              className='pb-0 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20'>
+              className='pb-0 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky'
+              style={{
+                top: `calc(64px + ${index * 40}px)`,
+              }}>
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                 <div className='lg:pb-16'>
                   <div className='gradient-primary inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
