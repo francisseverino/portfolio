@@ -1,6 +1,8 @@
+'use client';
+
 import Card from '@/components/Card';
 import SectionHeader from '@/components/SectionHeader';
-import React from 'react';
+import React, { useRef } from 'react';
 import atomicHabitsImage from '@/assets/atomic-habits.png';
 import Image from 'next/image';
 import { techStack } from '@/lib/data/techStack';
@@ -9,8 +11,10 @@ import smileMemoji from '@/assets/smile-memoji.png';
 import { hobbies } from '@/lib/data/hobbies';
 import CardHeader from '@/components/CardHeader';
 import TechStackItems from '@/components/TechStackItems';
+import { motion } from 'framer-motion';
 
 const About = () => {
+  const hobbiesRef = useRef(null);
   return (
     <div className='py-20 lg:py-28'>
       <div className='container'>
@@ -52,17 +56,19 @@ const About = () => {
                 title='Beyond the Code'
                 description='Explore my interests and hobbies beyond the digital realm'
               />
-              <div className='relative flex-1'>
+              <div className='relative flex-1' ref={hobbiesRef}>
                 {hobbies.map((hobby) => (
-                  <div
+                  <motion.div
                     key={hobby.title}
                     className='inline-flex items-center gap-2 px-6 gradient-primary rounded-full py-1.5 absolute'
-                    style={{ left: hobby.left, top: hobby.top }}>
+                    style={{ left: hobby.left, top: hobby.top }}
+                    drag
+                    dragConstraints={hobbiesRef}>
                     <span className='font-medium text-gray-950'>
                       {hobby.title}
                     </span>
                     <span>{hobby.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
