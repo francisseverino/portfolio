@@ -1,63 +1,53 @@
-import React from 'react';
-import ReactIcon from '@/assets/icons/react.svg';
-import VueIcon from '@/assets/icons/vuedotjs.svg';
-import TypescriptIcon from '@/assets/icons/typescript.svg';
-import DjangoIcon from '@/assets/icons/django.svg';
-import NodeIcon from '@/assets/icons/nodedotjs.svg';
-import GoIcon from '@/assets/icons/go.svg';
-import PostgresIcon from '@/assets/icons/postgresql.svg';
-import PythonIcon from '@/assets/icons/python.svg';
-import AWSIcon from '@/assets/icons/aws.svg';
-import TerraformIcon from '@/assets/icons/terraform.svg';
+import { Tech, techIcons } from './techIcons';
 
 export interface TechStack {
-  title: string;
+  title: Tech;
   icon: React.ElementType;
 }
 
 export const techStack: TechStack[] = [
   {
     title: 'React',
-    icon: ReactIcon,
+    icon: techIcons.React,
   },
   {
     title: 'React Native',
-    icon: ReactIcon,
+    icon: techIcons.React,
   },
   {
     title: 'Vue.js',
-    icon: VueIcon,
+    icon: techIcons['Vue.js'],
   },
   {
-    title: 'Typescript',
-    icon: TypescriptIcon,
+    title: 'TypeScript',
+    icon: techIcons.TypeScript,
   },
   {
     title: 'Python',
-    icon: PythonIcon,
+    icon: techIcons.Python,
   },
   {
     title: 'Django',
-    icon: DjangoIcon,
+    icon: techIcons.Django,
   },
   {
     title: 'Node.js',
-    icon: NodeIcon,
+    icon: techIcons['Node.js'],
   },
   {
     title: 'Go',
-    icon: GoIcon,
+    icon: techIcons.Go,
   },
   {
     title: 'PostgreSQL',
-    icon: PostgresIcon,
+    icon: techIcons.PostgreSQL,
   },
   {
     title: 'AWS',
-    icon: AWSIcon,
+    icon: techIcons.AWS,
   },
   {
     title: 'Terraform',
-    icon: TerraformIcon,
+    icon: techIcons.Terraform,
   },
 ];

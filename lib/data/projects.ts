@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image';
 import { projectImages } from './project-images';
+import { Tech } from './techIcons';
 
 export interface Project {
   name: string;
@@ -7,7 +8,7 @@ export interface Project {
   title: string;
   description: string;
   results: string[];
-  //   technologies: string[];
+  technologies: Tech[];
   links: {
     website?: string;
     github?: string;
@@ -27,6 +28,7 @@ export const projects: Project[] = [
       'Designed and deployed a scalable cloud architecture using AWS + Terraform',
       'Integrated Firebase Authentication, analytics, and subscription monetization for a seamless user experience',
     ],
+    technologies: ['React Native', 'Django', 'AWS', 'PostgreSQL', 'Firebase'],
     images: projectImages.monsai,
     links: {
       website: 'https://monsaiapp.com',
@@ -43,6 +45,7 @@ export const projects: Project[] = [
       'Developed real-time chat & social networking features using WebSockets',
       'Built a secure, scalable backend infrastructure to handle high user engagement',
     ],
+    technologies: ['React Native', 'Django', 'AWS', 'PostgreSQL', 'Firebase'],
     images: projectImages.beakr,
     links: {},
   },
@@ -57,6 +60,7 @@ export const projects: Project[] = [
       'Developed VIN scanning & part lookup with integrated Google Maps API',
       'Integrated Google Maps & Yelp APIs to help users find nearby mechanics',
     ],
+    technologies: ['React Native', 'Laravel', 'MySQL', 'Firebase'],
     images: projectImages.autove,
     links: {},
   },

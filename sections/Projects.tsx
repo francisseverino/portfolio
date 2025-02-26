@@ -6,6 +6,7 @@ import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import SectionHeader from '@/components/SectionHeader';
 import Card from '@/components/Card';
+import TechnologyList from '@/components/ProjectTechnologies';
 
 const Projects = () => {
   return (
@@ -26,10 +27,15 @@ const Projects = () => {
               }}>
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                 <div className='lg:pb-16'>
-                  <div className='gradient-primary inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
-                    <span>{project.name}</span>
-                    <span>&bull;</span>
-                    <span>{project.year}</span>
+                  <div className='flex justify-between'>
+                    <div className='gradient-primary inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
+                      <span>{project.name}</span>
+                      <span>&bull;</span>
+                      <span>{project.year}</span>
+                    </div>
+                    <div>
+                      <TechnologyList technologies={project.technologies} />
+                    </div>
                   </div>
                   <h3 className='font-serif text-2xl md:text-4xl mt-2 md:mt-5'>
                     {project.title}
