@@ -5,8 +5,8 @@ import { twMerge } from 'tailwind-merge';
 const navItems = [
   { title: 'Home', href: '#' },
   { title: 'Projects', href: '#projects' },
+  { title: 'Testimonials', href: '#testimonials' },
   { title: 'About', href: '#about' },
-  { title: 'Contact', href: '#contact' },
 ];
 
 const Header = () => {
