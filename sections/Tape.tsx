@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import StarIcon from '@/assets/icons/star.svg';
 
 const words = [
-  'Problem Solver',
-  'Self-Sufficient',
-  'Collaborative',
-  'Efficient',
   'Scalable',
-  'Innovative',
-  'Adaptable',
-  'Precision-Driven',
-  'Full-Stack',
-  'Automation-Driven',
+  'Performant',
   'Reliable',
+  'Secure',
+  'Efficient',
   'Maintainable',
+  'Innovative',
+  'Adaptive',
+  'Resilient',
+  'Precise',
+  'Optimized',
+  'Impactful',
 ];
 
 const Tape = () => {

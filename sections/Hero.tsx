@@ -25,13 +25,12 @@ const Hero = () => {
 
         <div className='max-w-lg mx-auto'>
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>
-            Turning Complexity into Scalable Solutions
+            Building Software That Scales
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            Full-Stack Engineer with 4+ years of experience building scalable,
-            high-performance applications using modern technologies. Passionate
-            about architecting systems that solve complex problems and deliver
-            real-world impact.
+            I design and build high-performance software that scales, turning
+            ambitious ideas into real-world solutions with clean, efficient
+            code.
           </p>
         </div>
 

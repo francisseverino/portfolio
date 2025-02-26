@@ -17,9 +17,9 @@ const Contact = () => {
             <div className=''>
               <h2 className='font-serif text-2xl md:text-3xl'>Let's Connect</h2>
               <p className='text-sm md:text-base mt-2'>
-                Interested in discussing tech, sharing ideas, or exploring
-                opportunities? I'm always open to connecting with like-minded
-                professionals in the software development community.
+                Whether you want to talk tech, collaborate, or discuss new
+                opportunities, I'd love to connect. Let's make something amazing
+                together.
               </p>
             </div>
             <div>

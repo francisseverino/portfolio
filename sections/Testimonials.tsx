@@ -9,9 +9,9 @@ const Testimonials = () => {
     <div className='py-16 lg:py-24'>
       <div className='container'>
         <SectionHeader
-          eyebrow='Happy clients'
-          title='What People Say About My Work'
-          description="Don't just take my word for it. See what my colleges have to say about my work"
+          eyebrow='What Others Say'
+          title='Recognized for Impact'
+          description="Beyond just writing code, I create solutions that scale. Here's what colleagues and collaborators say about working with me"
         />
         <div className='mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4'>
           <div className='flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]'>

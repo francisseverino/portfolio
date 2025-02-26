@@ -21,7 +21,7 @@ const About = () => {
         <SectionHeader
           eyebrow='About Me'
           title='A Glimpse Into My World'
-          description='Learn more about who I am, what I do, and what inspires me'
+          description="Beyond just building software, I'm always learning, exploring, and pushing boundaries. Here's a look at what drives me"
         />
         <div className='mt-20 flex flex-col gap-8'>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
@@ -37,7 +37,7 @@ const About = () => {
             <Card className='h-[320px] md:col-span-3 lg:col-span-2'>
               <CardHeader
                 title='Tech Stack'
-                description="Technologies I've leveraged to build real-world solutions across professional and personal projects."
+                description="Technologies I've used to create real-world solutions"
               />
               <TechStackItems
                 items={techStack}
@@ -54,7 +54,7 @@ const About = () => {
             <Card className='h-[320px] flex flex-col md:col-span-3  lg:col-span-2'>
               <CardHeader
                 title='Beyond the Code'
-                description='Explore my interests and hobbies beyond the digital realm'
+                description="What I do when I'm not engineering software, because life is more than just code."
               />
               <div className='relative flex-1' ref={hobbiesRef}>
                 {hobbies.map((hobby) => (
