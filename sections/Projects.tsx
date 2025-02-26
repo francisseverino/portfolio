@@ -46,7 +46,7 @@ const Projects = () => {
                       <li
                         key={result}
                         className='flex gap-2 text-sm md:text-base text-white/50'>
-                        <CheckCircleIcon className='size-5 md:size-6' />
+                        <CheckCircleIcon className='size-5 md:size-6 flex-shrink-0' />
                         <span>{result}</span>
                       </li>
                     ))}
