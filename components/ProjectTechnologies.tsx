@@ -11,7 +11,10 @@ const TechnologyList: React.FC<TechnologyListProps> = ({ technologies }) => {
       {technologies.map((tech) => {
         const IconComponent = techIcons[tech];
         return (
-          <IconComponent className='size-4 md:size-5 fill-[url(#tech-icon-gradient)]' />
+          <IconComponent
+            key={tech}
+            className='size-4 md:size-5 fill-[url(#tech-icon-gradient)]'
+          />
         );
       })}
       <svg className='size-0 absolute'>

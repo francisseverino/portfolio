@@ -39,7 +39,6 @@ const Header = () => {
 
   const isActive = useCallback(
     (section: string) => {
-      console.log(section, activeSection);
       const normalizedSection = section.replace('#', '').toLowerCase();
       const normalizedActiveSection = activeSection.toLowerCase();
       return normalizedActiveSection === normalizedSection;
