@@ -1,23 +1,66 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect, useCallback } from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const navItems = [
+  { title: 'Home', href: '#' },
+  { title: 'Projects', href: '#projects' },
+  { title: 'About', href: '#about' },
+  { title: 'Contact', href: '#contact' },
+];
 
 const Header = () => {
+  const [activeSection, setActiveSection] = useState('');
+
+  const handleScroll = useCallback(() => {
+    const sections = document.querySelectorAll('section[id]');
+    let current = '';
+
+    sections.forEach((section) => {
+      const sectionTop = (section as HTMLElement).offsetTop;
+      if (window.scrollY >= sectionTop - 100) {
+        current = section.getAttribute('id') || '';
+      }
+    });
+
+    setActiveSection(current);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Call once on mount to set initial active section
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
+  const isActive = useCallback(
+    (section: string) => {
+      console.log(section, activeSection);
+      const normalizedSection = section.replace('#', '').toLowerCase();
+      const normalizedActiveSection = activeSection.toLowerCase();
+      return normalizedActiveSection === normalizedSection;
+    },
+    [activeSection],
+  );
+
   return (
     <div className='flex justify-center items-center fixed top-3 w-full z-10'>
       <nav className='flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur'>
-        <a href='#' className='nav-item'>
-          Home
-        </a>
-        <a href='#projects' className='nav-item'>
-          Projects
-        </a>
-        <a href='#about' className='nav-item'>
-          About
-        </a>
-        <a
-          href='#contact'
-          className='nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900'>
-          Contact
-        </a>
+        {navItems.map(({ title, href }) => (
+          <a
+            key={href}
+            href={href}
+            className={twMerge(
+              'nav-item',
+              isActive(href) && 'nav-item-active',
+            )}>
+            {title}
+          </a>
+        ))}
       </nav>
     </div>
   );
