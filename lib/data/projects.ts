@@ -47,28 +47,6 @@ export const projects: Project[] = [
     links: {},
   },
   {
-    name: 'HW Todo',
-    year: 2020,
-    title: 'Homework Todo',
-    description:
-      'Created an application using Python framework Flask along with a group that helps students with assignments that synchronize with Canvas LMS and lets you add your own',
-    results: [],
-    images: projectImages.hwTodo,
-    links: {
-      github: 'https://github.com/francisseverino/hw-todo',
-    },
-  },
-  {
-    name: 'SocialApp',
-    year: 2020,
-    title: 'Social App',
-    description:
-      'Applied remarkable efficiency and developed a social application that allows people to chat, make friends, or date.',
-    results: [],
-    images: projectImages.socialApp,
-    links: {},
-  },
-  {
     name: 'Autove',
     year: 2019,
     title: 'Auto-Parts Locator',
@@ -82,32 +60,5 @@ export const projects: Project[] = [
     ],
     images: projectImages.autove,
     links: {},
-  },
-  {
-    name: 'Flixo',
-    year: 2019,
-    title: 'Movie Catalog',
-    description:
-      'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    results: [],
-
-    images: projectImages.flixo,
-    links: {
-      github: 'https://github.com/francisseverino/Flixo',
-    },
-  },
-  {
-    name: 'COVID-19',
-    year: 2020,
-    title: 'COVID-19 Tracker',
-    description:
-      'Flixio React app that uses “themoviedb” API to display a catalog of movies and TV shows.',
-    results: [],
-
-    images: projectImages.covid,
-    links: {
-      website: 'https://francisseverino.github.io/covid19-app/',
-      github: 'https://github.com/francisseverino/covid19-app',
-    },
   },
 ];
