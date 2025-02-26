@@ -6,7 +6,7 @@ import HeroBackground from '@/components/HeroBackground';
 
 const Hero = () => {
   return (
-    <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
+    <section className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
       <HeroBackground />
       <div className='container'>
         <div className='flex flex-col items-center'>
@@ -45,7 +45,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

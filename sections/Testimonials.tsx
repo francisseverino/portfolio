@@ -7,7 +7,7 @@ import QuoteIcon from '@/assets/icons/quote.svg';
 
 const Testimonials = () => {
   return (
-    <div className='py-16 lg:py-24'>
+    <section id='testimonials' className='py-16 lg:py-24'>
       <div className='container'>
         <SectionHeader
           eyebrow='What Others Say'
@@ -38,7 +38,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

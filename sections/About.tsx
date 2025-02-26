@@ -16,7 +16,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   const hobbiesRef = useRef(null);
   return (
-    <div className='py-20 lg:py-28'>
+    <section id='about' className='py-20 lg:py-28'>
       <div className='container'>
         <SectionHeader
           eyebrow='About Me'
@@ -91,7 +91,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
