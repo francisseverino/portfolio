@@ -7,7 +7,7 @@ import HeroOrbit from '@/components/HeroOrbit';
 
 const HeroBackground = () => {
   return (
-    <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
+    <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] pointer-events-none'>
       <div
         className='absolute inset-0 -z-30 opacity-5'
         style={{ backgroundImage: `url(${grainImage.src})` }}
