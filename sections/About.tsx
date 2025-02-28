@@ -11,7 +11,7 @@ import smileMemoji from '@/assets/smile-memoji.png';
 import { hobbies } from '@/lib/data/hobbies';
 import CardHeader from '@/components/CardHeader';
 import TechStackItems from '@/components/TechStackItems';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const About = () => {
   const hobbiesRef = useRef(null);
