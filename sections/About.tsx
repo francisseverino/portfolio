@@ -32,7 +32,7 @@ const About = () => {
                 description='Explore the books shaping my perspectives.'
               />
               <div className='mt-2 md:mt-0'>
-                <BooksCarousel books={Books} options={{ loop: true }} />
+                <BooksCarousel books={Books} />
               </div>
             </Card>
             <Card className='h-[320px] md:col-span-3 lg:col-span-2'>
