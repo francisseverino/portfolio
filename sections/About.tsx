@@ -3,7 +3,6 @@
 import Card from '@/components/Card';
 import SectionHeader from '@/components/SectionHeader';
 import React, { useRef } from 'react';
-import atomicHabitsImage from '@/assets/atomic-habits.png';
 import Image from 'next/image';
 import { techStack } from '@/lib/data/techStack';
 import mapImage from '@/assets/map.png';
@@ -12,6 +11,8 @@ import { hobbies } from '@/lib/data/hobbies';
 import CardHeader from '@/components/CardHeader';
 import TechStackItems from '@/components/TechStackItems';
 import { motion } from 'motion/react';
+import BooksCarousel from '@/components/BooksCarousel';
+import { Books } from '@/lib/data/books';
 
 const About = () => {
   const hobbiesRef = useRef(null);
@@ -27,11 +28,11 @@ const About = () => {
           <div className='grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
             <Card className='h-[320px] md:col-span-2 lg:col-span-1'>
               <CardHeader
-                title='My Reads'
+                title='Books'
                 description='Explore the books shaping my perspectives.'
               />
-              <div className='w-40 mx-auto mt-2 md:mt-0'>
-                <Image src={atomicHabitsImage} alt='Atomic Habits Book Cover' />
+              <div className='mt-2 md:mt-0'>
+                <BooksCarousel books={Books} options={{ loop: true }} />
               </div>
             </Card>
             <Card className='h-[320px] md:col-span-3 lg:col-span-2'>
