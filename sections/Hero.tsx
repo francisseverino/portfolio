@@ -33,13 +33,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-          <a
-            className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'
-            href='https://drive.google.com/file/d/1bcP7h4BZ_m6IY41fqNLc8WVBMqARZXM2/view?usp=share_link'>
-            <span>📄</span>
-            <span className='font-semibold'>View Resume</span>
-          </a>
+        <div className='flex justify-center items-center mt-8'>
           <a
             className='inline-flex items-center gap-2 bg-white text-gray-900 px-6 h-12 rounded-xl'
             href='#contact'>
