@@ -9,10 +9,6 @@ export interface Project {
   description: string;
   results: string[];
   technologies: Tech[];
-  links: {
-    website?: string;
-    github?: string;
-  };
   images: StaticImageData[];
 }
 
@@ -30,9 +26,6 @@ export const projects: Project[] = [
     ],
     technologies: ['React Native', 'Django', 'AWS', 'PostgreSQL', 'Firebase'],
     images: projectImages.monsai,
-    links: {
-      website: 'https://monsaiapp.com',
-    },
   },
   {
     name: 'Beakr',
@@ -47,7 +40,6 @@ export const projects: Project[] = [
     ],
     technologies: ['React Native', 'Django', 'AWS', 'PostgreSQL', 'Firebase'],
     images: projectImages.beakr,
-    links: {},
   },
   {
     name: 'Autove',
@@ -62,6 +54,5 @@ export const projects: Project[] = [
     ],
     technologies: ['React Native', 'Laravel', 'MySQL', 'Firebase'],
     images: projectImages.autove,
-    links: {},
   },
 ];
