@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import SectionHeader from '@/components/SectionHeader';
 import { testimonials } from '@/lib/data/testimonials';
-import Card from '@/components/Card';
+import CardContainer from '@/components/CardContainer';
 import QuoteIcon from '@/assets/icons/quote.svg';
 
 const Testimonials = () => {
@@ -19,7 +19,7 @@ const Testimonials = () => {
             {[...new Array(2)].fill(0).map((_, idx) => (
               <Fragment key={idx}>
                 {testimonials.map((testimonial) => (
-                  <Card
+                  <CardContainer
                     key={testimonial.position}
                     className='max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition duration-300'>
                     <div className='flex gap-4 items-center'>
@@ -31,7 +31,7 @@ const Testimonials = () => {
                     <div className='mt-4 text-sm text-white/80 text-right'>
                       - {testimonial.position}
                     </div>
-                  </Card>
+                  </CardContainer>
                 ))}
               </Fragment>
             ))}

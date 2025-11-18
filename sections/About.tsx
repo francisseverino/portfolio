@@ -1,6 +1,6 @@
 'use client';
 
-import Card from '@/components/Card';
+import CardContainer from '@/components/CardContainer';
 import SectionHeader from '@/components/SectionHeader';
 import React, { useRef } from 'react';
 import Image from 'next/image';
@@ -26,7 +26,7 @@ const About = () => {
         />
         <div className='mt-20 flex flex-col gap-8'>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
-            <Card className='h-[320px] md:col-span-2 lg:col-span-1'>
+            <CardContainer className='h-[320px] md:col-span-2 lg:col-span-1'>
               <CardHeader
                 title='Books'
                 description='Explore the books shaping my perspectives.'
@@ -34,8 +34,8 @@ const About = () => {
               <div className='mt-2 md:mt-0'>
                 <BooksCarousel books={Books} />
               </div>
-            </Card>
-            <Card className='h-[320px] md:col-span-3 lg:col-span-2'>
+            </CardContainer>
+            <CardContainer className='h-[320px] md:col-span-3 lg:col-span-2'>
               <CardHeader
                 title='Tech Stack'
                 description="Technologies I've used to create real-world solutions"
@@ -49,10 +49,10 @@ const About = () => {
                 className='mt-6'
                 itemsWrapClassName='animate-move-right [animation-duration:15s]'
               />
-            </Card>
+            </CardContainer>
           </div>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
-            <Card className='h-[320px] flex flex-col md:col-span-3  lg:col-span-2'>
+            <CardContainer className='h-[320px] flex flex-col md:col-span-3  lg:col-span-2'>
               <CardHeader
                 title='Beyond the Code'
                 description="What I do when I'm not engineering software, because life is more than just code."
@@ -72,8 +72,8 @@ const About = () => {
                   </motion.div>
                 ))}
               </div>
-            </Card>
-            <Card className='h-[320px] relative md:col-span-2 lg:col-span-1'>
+            </CardContainer>
+            <CardContainer className='h-[320px] relative md:col-span-2 lg:col-span-1'>
               <Image
                 src={mapImage}
                 alt='map'
@@ -88,7 +88,7 @@ const About = () => {
                   className='size-20'
                 />
               </div>
-            </Card>
+            </CardContainer>
           </div>
         </div>
       </div>

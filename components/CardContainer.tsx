@@ -2,7 +2,7 @@ import React, { ComponentPropsWithoutRef } from 'react';
 import grainImage from '@/assets/grain.jpg';
 import { twMerge } from 'tailwind-merge';
 
-const Card: React.FC<ComponentPropsWithoutRef<'div'>> = ({
+const CardContainer: React.FC<ComponentPropsWithoutRef<'div'>> = ({
   className,
   children,
   ...other
@@ -15,7 +15,7 @@ const Card: React.FC<ComponentPropsWithoutRef<'div'>> = ({
       )}
       {...other}>
       <div
-        className='absolute inset-0 -z-10 opacity-5'
+        className='absolute inset-0 -z-10 opacity-5 pointer-events-none'
         style={{
           backgroundImage: `url(${grainImage.src})`,
         }}
@@ -25,4 +25,4 @@ const Card: React.FC<ComponentPropsWithoutRef<'div'>> = ({
   );
 };
 
-export default Card;
+export default CardContainer;
