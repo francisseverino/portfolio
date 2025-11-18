@@ -1,12 +1,12 @@
 import { StaticImageData } from 'next/image';
 
 import atomicHabits from '@/assets/books/atomic-habits.jpg';
-import thePragmaticProgrammer from '@/assets/books/the-pragmatic-programmer.jpg';
+import cleanCode from '@/assets/books/clean-code.jpg';
+import crucialConversations from '@/assets/books/crucial-conversations.jpg';
 import dareToLead from '@/assets/books/dare-to-lead.jpg';
-import hellYeahOrNo from '@/assets/books/hell-yeah-or-no.jpg';
-import theFourHourWorkweek from '@/assets/books/the-4-hour-workweek.jpg';
-import thePsychologyOfMoney from '@/assets/books/the-psychology-of-money.jpg';
-import theMillionaireFastlane from '@/assets/books/the-millionaire-fastlane.jpg';
+import habitsOfHighlyEffectivePeople from '@/assets/books/habits-of-highly-effective-people.jpg';
+import thePragmaticProgrammer from '@/assets/books/the-pragmatic-programmer.jpg';
+import designingDataIntensiveApplications from '@/assets/books/designing-data-intensive-applications.jpg';
 
 export interface Book {
   title: string;
@@ -19,27 +19,27 @@ export const Books: Book[] = [
     img: thePragmaticProgrammer,
   },
   {
-    title: 'Atomic Habits',
-    img: atomicHabits,
+    title: 'Designing Data-Intensive Applications',
+    img: designingDataIntensiveApplications,
+  },
+  {
+    title: 'Crucial Conversations',
+    img: crucialConversations,
   },
   {
     title: 'Dare To Lean',
     img: dareToLead,
   },
   {
-    title: 'Hell Yeah or No',
-    img: hellYeahOrNo,
+    title: '7 Habits of Highly Effective People',
+    img: habitsOfHighlyEffectivePeople,
   },
   {
-    title: 'The 4 Hour Workweek',
-    img: theFourHourWorkweek,
+    title: 'Atomic Habits',
+    img: atomicHabits,
   },
   {
-    title: 'The Psychology of Money',
-    img: thePsychologyOfMoney,
-  },
-  {
-    title: 'The Millionaire Fastlane',
-    img: theMillionaireFastlane,
+    title: 'Clean Code',
+    img: cleanCode,
   },
 ];
